@@ -11,6 +11,7 @@ import SkillBlock from "../components/SkillBlock"
 import Collapse from "../components/Collapse"
 // DATA
 import data from "../data/collapses.json"
+import techData from "../data/techIcons.json"
 // IMAGE
 import womanTea from "../assets/tea-woman.png"
 import WomanTeaMobile from "../assets/tea-woman-mini.png"
@@ -19,27 +20,9 @@ import womanFlower from "../assets/flower-woman.png"
 import womanFlowerMobile from "../assets/flower-woman-mini.png"
 // ICON SVG
 import arrowTop from "../assets/icons/arrow-move-up.svg"
-
 import cardContact from "../assets/icons/card-contact.svg"
 import downloadSvg from "../assets/icons/download-svg.svg"
 import smoke from "../assets/fumee-gif.gif"
-import htmlSvg from "../assets/icons/html-5-svg.svg"
-import cssSvg from "../assets/icons/css-3-svg.svg"
-import scssSvg from "../assets/icons/scss-svg.svg"
-import jsSvg from "../assets/icons/js-svg.svg"
-import reactSvg from "../assets/icons/react-svg.svg"
-import bootstrapSvg from "../assets/icons/bootstrap-svg.svg"
-import tailwindcssSvg from "../assets/icons/tailwind-svg.svg"
-import nodejsSvg from "../assets/icons/nodejs-svg.svg"
-import mongoDBSvg from "../assets/icons/mongoDB-svg.svg"
-import vSCSvg from "../assets/icons/visual-studio-code-svg.svg"
-import gitSvg from "../assets/icons/git-svg.svg"
-import githubSvg from "../assets/icons/github-svg.svg"
-import figmaSvg from "../assets/icons/figma-svg.svg"
-import xDSvg from "../assets/icons/adobe-xd-svg.svg"
-import illustratorSvg from "../assets/icons/adobe-illustrator-svg.svg"
-import chatGPTSvg from "../assets/icons/chatgpt-svg.svg"
-import supermavenSvg from "../assets/icons/supermaven-svg.svg"
 
 
 
@@ -47,10 +30,6 @@ import supermavenSvg from "../assets/icons/supermaven-svg.svg"
 
 
 const About = () => {
-  const frontendIcons = [htmlSvg, cssSvg, scssSvg, jsSvg, reactSvg, bootstrapSvg, tailwindcssSvg]
-  const backendIcons = [nodejsSvg, mongoDBSvg]
-  const envIcons = [vSCSvg, gitSvg, githubSvg, figmaSvg, xDSvg, illustratorSvg]
-  const aIIcons = [chatGPTSvg, supermavenSvg]
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -67,7 +46,8 @@ const About = () => {
           <H1 title="A propos" />
           <div className="font-primary flex items-start gap-[35px] mt-[20px] md:mt-[50px]">
             {/* IMAGE FOR DESKTOP */}
-            <motion.div className="hidden w-[380px] md:block md:ml-[20px] relative -z-2"
+            <motion.div
+              className="hidden w-[380px] md:block md:ml-[20px] relative -z-2"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -81,7 +61,9 @@ const About = () => {
 
               <div className="flex items-start gap-[15px]">
                 {/* IMAGE FOR MOBILE */}
-                <motion.img src={WomanTeaMobile} alt="Femme tenant une énorme tasse de thé" className="block md:hidden w-[170px] "
+                <motion.img
+                  src={WomanTeaMobile} alt="Femme tenant une énorme tasse de thé"
+                  className="block md:hidden w-[170px] "
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
@@ -89,12 +71,13 @@ const About = () => {
                 />
                 <div className="font-secondary mt-[50px] md:mt-[20px]  mb-[30px]">
                   <H2 title="Hello," />
-                  <motion.p className="text-lg"
+                  <motion.h3
+                    className="text-lg"
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2, duration: 1 }}
-                  >Moi c'est Hélène Canovas</motion.p>
+                  >Moi c'est Hélène Canovas</motion.h3>
                 </div>
               </div>
 
@@ -126,7 +109,8 @@ const About = () => {
                   className="my-[15px] md:my-[30px]"
                 >En dehors du code, j’adore résoudre des énigmes, assembler des puzzles et la musique. Et surtout, je ne dis jamais non à une bonne tasse de thé – qu’il pleuve, qu’il vente ou qu’il soit 3h du matin, c’est toujours le bon moment !</motion.p>
 
-                <motion.div className="mt-[30px] flex items-center justify-center mb-[20px] gap-[5px] md:mb-[40px]  md:gap-[10px] md:justify-start "
+                <motion.div
+                  className="mt-[30px] flex items-center justify-center mb-[20px] gap-[5px] md:mb-[40px]  md:gap-[10px] md:justify-start "
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -137,7 +121,9 @@ const About = () => {
                 </motion.div>
 
                 <div className="flex justify-center">
-                  <motion.a href="" download="CV_Helene_Canovas_2025" className="group flex items-center gap-[5px] w-fit "
+                  <motion.a
+                    href="" download="CV_Helene_Canovas_2025"
+                    className="group flex items-center gap-[5px] w-fit "
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -169,12 +155,13 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                <SkillBlock title="Front-end" icons={frontendIcons} altIcon="Icone de tech front-end" />
-                <SkillBlock title="Back-end" icons={backendIcons} altIcon="Icone de tech back-end" />
-                <SkillBlock title="Environnement de travail" icons={envIcons} altIcon="Icone de logiciel de travail" />
-                <SkillBlock title="Intelligence Artificielle" icons={aIIcons} altIcon="Icone d'IA" />
+                {/* SKILLBLOCKS */}
+                {techData?.techIcons.map(data => {
+                  return <SkillBlock key={data.id} techData={data} />
+                }) }
               </motion.div>
-              <motion.div className="hidden md:block md:mb-[40px] relative z-2 mr-[40px]"
+              <motion.div
+                className="hidden md:block md:mb-[40px] relative z-2 mr-[40px]"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -195,12 +182,7 @@ const About = () => {
                           "M122.2 -128.9C157.2 -87.2 183.6 -43.6 187.3 3.7C190.9 50.9 171.8 101.8 136.8 122.7C101.8 143.5 50.9 134.3 0.1 134.1C-50.7 134 -101.4 143 -139 122.2C-176.7 101.4 -201.3 50.7 -199.1 2.2C-196.9 -46.2 -167.7 -92.4 -130.1 -134.1C-92.4 -175.7 -46.2 -212.9 -1.3 -211.6C43.6 -210.3 87.2 -170.5 122.2 -128.9",
                           "M129.2 -116C167.8 -90.5 199.9 -45.3 201.7 1.8C203.5 48.8 174.9 97.6 136.2 139.2C97.6 180.9 48.8 215.5 9 206.5C-30.9 197.5 -61.8 145.1 -82.6 103.4C-103.4 61.8 -114.2 30.9 -122.9 -8.7C-131.7 -48.3 -138.3 -96.6 -117.5 -122.1C-96.6 -147.6 -48.3 -150.3 -1.5 -148.8C45.3 -147.3 90.5 -141.5 129.2 -116",
                         ],
-                        transition: {
-                          repeat: Infinity,
-                          repeatType: "mirror",
-                          duration: 4,
-                          ease: "easeInOut",
-                        },
+                        transition: { repeat: Infinity, repeatType: "mirror", duration: 4, ease: "easeInOut" },
                       }}
                       d="M122.2 -128.9C157.2 -87.2 183.6 -43.6 187.3 3.7C190.9 50.9 171.8 101.8 136.8 122.7C101.8 143.5 50.9 134.3 0.1 134.1C-50.7 134 -101.4 143 -139 122.2C-176.7 101.4 -201.3 50.7 -199.1 2.2C-196.9 -46.2 -167.7 -92.4 -130.1 -134.1C-92.4 -175.7 -46.2 -212.9 -1.3 -211.6C43.6 -210.3 87.2 -170.5 122.2 -128.9"
                       fill="#081645"
@@ -216,7 +198,7 @@ const About = () => {
           className="main-container pt-[40px] md:pt-[50px] pb-[100px] md:pb-[150px] ">
           <H2 title="Mon parcours" />
           <div className="md:flex md:justify-around md:items-start md:gap-[20px] mt-[30px] md:mt-[50px] ">
-            <motion.img 
+            <motion.img
               src={womanFlower} alt="Illustration d'une femme dans une fleur l'arrosant pour desktop"
               className="hidden md:block w-[407px]"
               initial={{ opacity: 0, x: -20 }}
@@ -225,12 +207,12 @@ const About = () => {
               transition={{ delay: 0.2, duration: 1 }}
             />
             {/* COLLAPSES */}
-            <motion.div 
-            className="w-full md:max-w-[500px] font-primary no-before "
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 1 }}
+            <motion.div
+              className="w-full md:max-w-[500px] font-primary no-before "
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 1 }}
             >
               {data?.collapses.map(item => {
                 return <Collapse key={item.id} data={item} />
@@ -249,15 +231,15 @@ const About = () => {
               </button>
             </motion.div>
           </div>
-              {/* BUTTON AND IMG FOR MOBILE */}
+          {/* BUTTON AND IMG FOR MOBILE */}
           <div className="flex md:hidden mt-[60px] justify-around items-center">
-            <motion.img 
-            src={womanFlowerMobile} alt="Illustration d'une femme dans une fleur l'arrosant pour mobile " 
-            className="w-[220px] max-w-[80%]"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 1 }}
+            <motion.img
+              src={womanFlowerMobile} alt="Illustration d'une femme dans une fleur l'arrosant pour mobile "
+              className="w-[220px] max-w-[80%]"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 1 }}
             />
             <motion.button
               onClick={scrollToTop}
@@ -272,11 +254,6 @@ const About = () => {
             </motion.button>
           </div>
         </section>
-
-
-
-
-
       </main>
     </>
   )

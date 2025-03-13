@@ -1,0 +1,113 @@
+{
+  "techIcons": [
+    {
+      "id": 0,
+      "catégorie": "Front-end",
+      "icons": [
+        {
+          "id": 0,
+          "nom": "Icone HTML5",
+          "path": "/images/techIcons/html-5-svg.svg"
+        },
+        {
+          "id": 1,
+          "nom": "Icone CSS3",
+          "path": "/images/techIcons/css-3-svg.svg"
+        },
+        {
+          "id": 2,
+          "nom": "Icone SCSS",
+          "path": "/images/techIcons/scss-svg.svg"
+        },
+        {
+          "id": 3,
+          "nom": "Icone JavaScript",
+          "path": "/images/techIcons/js-svg.svg"
+        },
+        {
+          "id": 4,
+          "nom": "Icone React",
+          "path": "/images/techIcons/react-svg.svg"
+        },
+        {
+          "id": 5,
+          "nom": "Icone Bootstrap",
+          "path": "/images/techIcons/bootstrap-svg.svg"
+        },
+        {
+          "id": 6,
+          "nom": "Icone Tailwind CSS",
+          "path": "/images/techIcons/tailwind-svg.svg"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "catégorie": "Back-end",
+      "icons": [
+        {
+          "id": 0,
+          "nom": "Icone Node.js",
+          "path": "/images/techIcons/nodejs-svg.svg"
+        },
+        {
+          "id": 1,
+          "nom": "Icone CSS3",
+          "path": "/images/techIcons/mongoDB-svg.svg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "catégorie": "Environnement de travail",
+      "icons": [
+        {
+          "id": 0,
+          "nom": "Icone Visual Studio Code",
+          "path": "/images/techIcons/visual-studio-code-svg.svg"
+        },
+        {
+          "id": 1,
+          "nom": "Icone Git",
+          "path": "/images/techIcons/git-svg.svg"
+        },
+        {
+          "id": 2,
+          "nom": "Icone Github",
+          "path": "/images/techIcons/github-svg.svg"
+        },
+        {
+          "id": 3,
+          "nom": "Icone Figma",
+          "path": "/images/techIcons/figma-svg.svg"
+        },
+        {
+          "id": 4,
+          "nom": "Icone Adobe XD",
+          "path": "/images/techIcons/adobe-xd-svg.svg"
+        },
+        {
+          "id": 35,
+          "nom": "Icone Adobe Illustrator",
+          "path": "/images/techIcons/adobe-illustrator-svg.svg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "catégorie": "Intelligence Artificielle",
+      "icons": [
+        {
+          "id": 0,
+          "nom": "Icone chatGPT",
+          "path": "/images/techIcons/chatgpt-svg.svg"
+        },
+        {
+          "id": 1,
+          "nom": "Icone Supermaven",
+          "path": "/images/techIcons/supermaven-svg.svg"
+        }
+      ]
+    }
+  ]
+}
