@@ -8,7 +8,7 @@ const Header = () => {
     <header className="main-container">
       <nav className="flex items-center justify-between py-[30px] bg-white text-white font-p-bold text-md h-[80px] ">
         <Link to="/">
-          <img src={logo} alt="Logo" className="w-[80px]" />
+          <img src={logo} alt="Logo Hélène Canovas" className="w-[80px]" />
         </Link>
 
         {/* BURGER MENU */}

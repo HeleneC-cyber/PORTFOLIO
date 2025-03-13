@@ -1,13 +1,13 @@
 import H3 from "./H3";
 
 
-const SkillBlock = ({title, icons = []}) => {
+const SkillBlock = ({title, icons = [], altIcon}) => {
   return (
     <div className="mb-[30px] md:mb-[40px]">
       <H3 title={title} />
-      <ul className="flex flex-wrap gap-[10px] mt-[10px]">
+      <ul className="flex flex-wrap gap-[10px] mt-[10px] ml-[30px]">
         {icons.map((icon, index)=>{
-          return <li key={index}><img src={icon} alt="icon" className="h-[50px]" /></li>
+          return <li key={index}><img src={icon} alt={altIcon} className="h-[50px]" /></li>
         })}
 
       </ul>
