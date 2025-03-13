@@ -1,0 +1,33 @@
+{
+  "collapses": [
+    {
+      "id": 0,
+      "title": "Première voie, direction le droit",
+      "desc": [
+        "Après un BAC SVT spécialité ISN, mention B, j'ai choisi de partir en droit, guidée par des circonstances personnelles. Cette expérience m’a permis de développer une rigueur d’analyse, une capacité de synthèse et une bonne gestion de l’autonomie, des compétences qui me servent encore aujourd’hui.",
+
+        "Cependant entre le passage du lycée à la faculté, un nouvel environnement et certaines matières qui ne me correspondaient pas, après un an, je me suis réorientée vers mon rêve d’enfance : devenir professeure, et j’ai choisi d’enseigner l’une des mes matières d’affinités : les sciences."
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Deuxième voie, direction les SVT",
+      "desc": [
+        "Pour réaliser cet objectif, je suis retournée dans ma région natale, à Amiens, où j’ai entrepris une licence SVTU. Souhaitant aller plus loin, j’ai poursuivi jusqu’au Master 2 MEEF, spécialité SVT, et obtenu au passage mon Certificat Informatique et Internet niveau 2.",
+
+        "Au fil de mes expériences, entre stages en collège et lycée, trois années dans l’Éducation nationale en tant qu’Assistante d’Éducation et professeure particulière, j’ai développé des compétences essentielles : pédagogie, adaptation, didactique et gestion de groupe.",
+
+        "Mais ces années m’ont aussi permis de mieux comprendre ce qui m’anime réellement. Si j’aime apprendre et partager mes connaissances, j’ai réalisé que l’enseignement traditionnel ne correspondait pas à ma manière d’évoluer. J’avais besoin d’un environnement plus dynamique, tourné vers la création et la résolution de problèmes… ce qui m’a naturellement conduite vers le développement web."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Jamais deux sans trois, le Dev !",
+      "desc": [
+        "En parallèle, ma curiosité pour le développement web n’a cessé de grandir. Passionnée par le graphisme et la conception d’interfaces, j’ai commencé à créer des maquettes et à les intégrer pour mon entourage. Petit à petit, j’ai découvert un domaine où créativité et logique se rencontrent, et où chaque projet est une nouvelle énigme à résoudre.",
+
+        "Encouragée par mon ami Anthony, j’ai décidé de transformer cette passion en véritable projet professionnel. Après un parcours autodidacte, j’ai franchi une nouvelle étape en intégrant la formation Développeur Web (RNCP niv5) chez OpenClassrooms, que je suis sur le point de terminer. Aujourd’hui, je suis plus motivée que jamais à mettre mes compétences en pratique, à continuer d’apprendre et à évoluer dans un environnement stimulant."
+      ]
+    }
+  ]
+}

@@ -105,3 +105,7 @@
 .bm-overlay {
     display: none;
 }
+
+.no-before *::before {
+ display: none;
+}

@@ -1,11 +1,16 @@
-// import React from 'react';
-import { slide as Menu } from "react-burger-menu";
-import { Link } from "react-router";
-import logo from "../assets/logo.svg";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"
+import { slide as Menu } from "react-burger-menu"
+import { Link } from "react-router"
+import logo from "../assets/logo.svg"
 
 const Header = () => {
   return (
-    <header className="main-container">
+    <motion.header className="main-container"
+    initial={{opacity: 0}} 
+    animate={{opacity: 1}} 
+    transition={{duration: 1}}
+    >
       <nav className="flex items-center justify-between py-[30px] bg-white text-white font-p-bold text-md h-[80px] ">
         <Link to="/">
           <img src={logo} alt="Logo Hélène Canovas" className="w-[80px]" />
@@ -39,7 +44,7 @@ const Header = () => {
         </div>
       </nav>
 
-    </header>
+    </motion.header>
   );
 };
 
