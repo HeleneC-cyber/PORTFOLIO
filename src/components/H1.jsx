@@ -18,6 +18,3 @@ const H1 = ({title}) => {
 // }
 
 export default H1
-
-
-// ml-[20px] mb-[20px]

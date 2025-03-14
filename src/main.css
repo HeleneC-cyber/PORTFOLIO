@@ -28,6 +28,7 @@
     --font-secondary: "Mogra";
 
     /* FONT SIZE */
+    --text-2xs: 14px;
     --text-xs: 16px;
     --text-sm: 18px;
     --text-md: 20px;
