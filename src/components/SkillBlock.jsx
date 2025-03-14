@@ -3,7 +3,6 @@ import H3 from "./H3";
 
 const SkillBlock = ({ techData }) => {
 
-  console.log(techData)
   return (
     <div className="mb-[30px] md:mb-[40px]">
       <H3 title={techData.catégorie} />

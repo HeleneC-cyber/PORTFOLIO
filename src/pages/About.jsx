@@ -117,7 +117,12 @@ const About = () => {
                   transition={{ delay: 0.3, duration: 1 }}
                 >
                   <p className="max-w-[70%] md:max-w-[100%] text-center md:text-left">Si mon profil vous intéresse, n’hésitez pas à me contacter</p>
-                  <Link to="/contact" aria-label="lien vers la page contact" className="w-[47px] block cursor-pointer rounded-[5px] hover:bg-orange duration-200 ease-in-out"><img src={cardContact} alt="icone de contact" /></Link>
+                  <Link to="/contact" aria-label="lien vers la page contact" className="w-[47px] block cursor-pointer rounded-[5px]  duration-200 ease-in-out">
+                    <motion.img
+                      src={cardContact} alt="icone de contact"
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                    /></Link>
                 </motion.div>
 
                 <div className="flex justify-center">
@@ -127,8 +132,12 @@ const About = () => {
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.3, duration: 1 }}
-                  ><img src={downloadSvg} alt="icone de téléchargement" className="group-hover:bg-orange rounded-full" />
+                    transition={{
+                      opacity: { delay: 0.4, duration: 1 }
+                    }}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  ><img src={downloadSvg} alt="icone de téléchargement"/>
                     <p className="font-secondary text-grey text-center  group-hover:text-orange">Télécharger mon CV</p>
                   </motion.a>
                 </div>
@@ -158,7 +167,7 @@ const About = () => {
                 {/* SKILLBLOCKS */}
                 {techData?.techIcons.map(data => {
                   return <SkillBlock key={data.id} techData={data} />
-                }) }
+                })}
               </motion.div>
               <motion.div
                 className="hidden md:block md:mb-[40px] relative z-2 mr-[40px]"
@@ -218,7 +227,7 @@ const About = () => {
                 return <Collapse key={item.id} data={item} />
               })}
               <div className="mt-[40px] ms:mt-[80px]">
-                <span className=" font-p-bold">Mon objectif ? </span>
+                <strong className=" font-p-bold">Mon objectif ? </strong>
                 Trouver une alternance (front/full-stack) ou un poste en développement front-end où je pourrai m’épanouir et apporter ma touche, que ce soit en full remote ou dans la région de Dijon.
               </div>
               {/* BUTTON FOR DESKTOP */}
@@ -227,7 +236,12 @@ const About = () => {
                 aria-label="Bouton pour retourner en haut de la page"
                 className="mx-auto mt-[80px] cursor-pointer hidden md:block"
               >
-                <img src={arrowTop} alt="flèche vers un bouton" className="size-[50px]" />
+                <motion.img 
+                src={arrowTop} alt="flèche vers un bouton" 
+                className="size-[50px]" 
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                />
               </button>
             </motion.div>
           </div>
@@ -250,7 +264,12 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 1 }}
             >
-              <img src={arrowTop} alt="flèche vers un bouton" className="size-[50px]" />
+              <motion.img 
+              src={arrowTop} alt="flèche vers un bouton" 
+              className="size-[50px]" 
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              />
             </motion.button>
           </div>
         </section>

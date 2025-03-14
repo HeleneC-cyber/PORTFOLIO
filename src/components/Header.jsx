@@ -26,7 +26,7 @@ const Header = () => {
             Accueil
           </Link>
           <Link
-            to="/about"
+            to="/about-me"
             className="mb-[60px] hover:text-orange duration-200 ease-in-out"
           >
             A propos

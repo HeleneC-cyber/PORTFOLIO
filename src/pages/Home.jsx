@@ -49,7 +49,7 @@ const Home = () => {
             src={plantR1} alt="Feuille de monsterra en rouge"
             className="absolute -z-1 w-[215px] bottom-[60%] right-[30px] md:bottom-[60%] md:right-[30px] max-w-[23%] md:max-w-full"
             initial={{ rotate: 0, opacity: 0 }}
-            animate={{ rotate: [5, -5], opacity: 1}}
+            animate={{ rotate: [5, -5], opacity: 1 }}
             transition={{
               opacity: { duration: 1, delay: 3.5, ease: "easeInOut" },
               rotate: { duration: 2, repeat: Infinity, repeatType: "mirror", ease: "easeInOut", },
@@ -122,7 +122,11 @@ const Home = () => {
             animate={{ opacity: 1, }}
             transition={{ duration: 1, delay: 4, ease: "easeInOut" }}
           >
-            <Link to="/projects" className="text-xl bg-sand py-[10px] px-[20px] rounded-[15px] z-2 cursor-pointer hover:bg-orange duration-200 ease-in-out">Mes projets</Link>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+            >
+              <Link to="/projects" className="text-xl bg-sand py-[10px] px-[20px] rounded-[15px] z-2 cursor-pointer hover:bg-orange duration-200 ease-in-out">Mes projets</Link>
+            </motion.div>
           </motion.div>
 
           {/* ABOUT ME */}
@@ -132,7 +136,11 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 4.3, ease: "easeInOut" }}
           >
-            <Link to="/about-me" className="text-xl bg-sand py-[10px] px-[20px] rounded-[15px] z-2 cursor-pointer hover:bg-orange duration-200 ease-in-out">A propos</Link>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+            >
+              <Link to="/about-me" className="text-xl bg-sand py-[10px] px-[20px] rounded-[15px] z-2 cursor-pointer hover:bg-orange duration-200 ease-in-out">A propos</Link>
+            </motion.div>
           </motion.div>
 
           {/* CONTACT */}
@@ -142,7 +150,11 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 4.6, ease: "easeInOut" }}
           >
-            <Link to="/projects" className="text-xl bg-sand py-[10px] px-[20px] rounded-[15px] z-2 cursor-pointer hover:bg-orange duration-200 ease-in-out">Contact</Link>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+            >
+              <Link to="/contact" className="text-xl bg-sand py-[10px] px-[20px] rounded-[15px] z-2 cursor-pointer hover:bg-orange duration-200 ease-in-out">Contact</Link>
+            </motion.div>
           </motion.div>
         </div>
 
@@ -153,7 +165,10 @@ const Home = () => {
             className="text-md text-center bg-sand rounded-[15px] py-[10px] mb-[10px]"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 3.8, ease: "easeInOut" }}
+            transition={{
+              opacity:{ duration: 0, delay: 3.8, ease: "easeInOut" }
+            }}
+            whileTap={{ scale: 0.9 }}
           >
             <Link to="/about-me" className="block">A propos</Link>
           </motion.li>
@@ -161,14 +176,20 @@ const Home = () => {
             className="text-md text-center bg-sand rounded-[15px] py-[10px] mb-[10px]"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 4, ease: "easeInOut" }}
+            transition={{ 
+              opacity : {duration: 0.5, delay: 4, ease: "easeInOut"} 
+            }}
+            whileTap={{ scale: 0.9 }}
           >
             <Link to="/projects" className="block">Mes projets</Link>
           </motion.li>
           <motion.li className="text-md text-center bg-sand rounded-[15px] py-[10px] mb-[10px]"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 4.2, ease: "easeInOut" }}
+            transition={{ 
+              opacity: {duration: 0.5, delay: 4.2, ease: "easeInOut"} 
+            }}
+            whileTap={{ scale: 0.9 }}
           >
             <Link to="/contact" className="block">Contact</Link>
           </motion.li>
