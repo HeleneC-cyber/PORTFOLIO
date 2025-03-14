@@ -1,23 +1,53 @@
 // DEPENDENCIES
 import { useState } from "react"
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 // COMPONENTS
 import Input from "./Input"
 
 
 
 const Form = () => {
+
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
-    user_message: ""
+    message: ""
   })
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_API_KEY,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current, {
+        publicKey:  import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!')
+          setFormData({
+            user_name: "",
+            user_email: "",
+            message: ""
+          })
+        },
+        (error) => {
+          console.log('FAILED...', error.text)
+        },
+      )
+  }
+
   return (
-    <form action="" method="post" className="flex flex-col gap-[45px] ">
+    <form ref={form} method="post" onSubmit={sendEmail} className="flex flex-col gap-[45px] ">
       <Input
         label="Nom"
         id="name"
@@ -46,12 +76,17 @@ const Form = () => {
         type="textarea"
         name="message"
         placeholder="Bonjour, je souhaite vous contacter à propos de..."
-        value={formData.user_message}
+        value={formData.message}
         onChange={handleChange}
         regex={/^(?:\S*\s*){50,}$/}
         errorMessage="Au moins 50 caractères (hors espace)" />
 
-      <button type="submit" className="w-full text-white text-xl bg-grey rounded-[15px] py-[6px]">Envoyer</button>
+      <button
+        type="submit"
+        value="Envoyer"
+        className="w-full text-white text-xl bg-grey rounded-[15px] py-[6px]">
+          Envoyer
+      </button>
     </form>
   )
 }
