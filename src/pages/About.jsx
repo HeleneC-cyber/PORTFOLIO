@@ -70,7 +70,7 @@ const About = () => {
                   transition={{ delay: 0.2, duration: 1 }}
                 />
                 <div className="font-secondary mt-[50px] md:mt-[20px]  mb-[30px]">
-                  <H2 title="Hello," />
+                  <H2 title="Hello," customClass="ml-[10px]" />
                   <motion.h3
                     className="text-lg"
                     initial={{ opacity: 0, x: 20 }}
@@ -137,7 +137,7 @@ const About = () => {
                     }}
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
-                  ><img src={downloadSvg} alt="icone de téléchargement"/>
+                  ><img src={downloadSvg} alt="icone de téléchargement" />
                     <p className="font-secondary text-grey text-center  group-hover:text-orange">Télécharger mon CV</p>
                   </motion.a>
                 </div>
@@ -154,7 +154,7 @@ const About = () => {
             className="absolute -top-[50px] left-0 w-full h-full -z-1"
           />
           <div className="main-container">
-            <H2 title="Mes compétences" />
+            <H2 title="Mes compétences" customClass="ml-[10px]" />
             <div className="flex items-end gap-[20px] justify-around ">
 
               <motion.div
@@ -205,7 +205,7 @@ const About = () => {
 
         <section
           className="main-container pt-[40px] md:pt-[50px] pb-[100px] md:pb-[150px] ">
-          <H2 title="Mon parcours" />
+          <H2 title="Mon parcours" customClass="ml-[10px]" />
           <div className="md:flex md:justify-around md:items-start md:gap-[20px] mt-[30px] md:mt-[50px] ">
             <motion.img
               src={womanFlower} alt="Illustration d'une femme dans une fleur l'arrosant pour desktop"
@@ -236,11 +236,11 @@ const About = () => {
                 aria-label="Bouton pour retourner en haut de la page"
                 className="mx-auto mt-[80px] cursor-pointer hidden md:block"
               >
-                <motion.img 
-                src={arrowTop} alt="flèche vers un bouton" 
-                className="size-[50px]" 
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
+                <motion.img
+                  src={arrowTop} alt="flèche vers un bouton"
+                  className="size-[50px]"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
                 />
               </button>
             </motion.div>
@@ -264,11 +264,11 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 1 }}
             >
-              <motion.img 
-              src={arrowTop} alt="flèche vers un bouton" 
-              className="size-[50px]" 
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
+              <motion.img
+                src={arrowTop} alt="flèche vers un bouton"
+                className="size-[50px]"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
               />
             </motion.button>
           </div>
