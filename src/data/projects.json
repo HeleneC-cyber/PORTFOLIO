@@ -1,0 +1,163 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "title": "Portfolio",
+      "type": "Projet OpenClassrooms & Perso",
+      "year": "2025",
+      "tags": ["HTLM5", "CSS3","React", "TailwindCSS", "Motion", "Figma"],
+      "desc": "Ce projet consiste à concevoir et développer un portfolio, visant à présenter mes compétences, expérience et réalisations en tant que développeur. Ce portfolio sert de vitrine professionnelle pour mettre en avant mes projets, mon parcours, ma progression et mes compétences techniques.",
+      "objectives": [
+        "Déployer un site statique en ligne",
+        "Mettre en avant mes réalisations et mes compétences techniques",
+        "Expérimenter des librairies et animations",
+        "Créer une idéntité professionnelle",
+        "Améliorer mes compétences en design et performance"
+      ],
+      "images": ["/images/projects/portfolio-desktop.webp", "/images/projects/portfolio-mobile.webp"],
+      "remarques": ["Ce projet offrant une plus grande liberté j'ai décidé d'utiliser les frameworks React et Tailwind CSS pour le développement du site. Cette solution me permet de concevoir un portfolio statique et dynamique rapidement et de manière optimisée et performante. Egalement pour le rendre plus attrayant, et l'animer facilement j'ai utilisé la librairie Framer Motion ainsi que les animations de React-Wavify.",
+       "Pour la conception des différentes pages du portfolio, j'ai utilisé Figma ainsi qu'Illustrator afin de personnaliser mes images vectorisées.",
+       "Ce projet ayant pour but d'entrer en contact avec de futurs employeurs et collègues, le formulaire de contact intégré est fonctionnel et facile à utiliser. Il nous permettra de communiquer si vous le souhaitez !"
+      ],
+      "github": "https://github.com/HeleneC-cyber/PORTFOLIO",
+      "live": "https://www.figma.com/design/vImZhMZO6I7kNVAPzkKtbG/Portfolio?node-id=0-1&m=dev&t=55it6kj4r0KLcI9k-1"
+    },
+    {
+      "id": 1,
+      "title": "Booki",
+      "type": "Projet OpenClassrooms",
+      "year": "2024",
+      "tags": ["HTML5", "CSS3"],
+      "desc": "Ce projet consiste à développer le site web de la start-up Booki, qui permet aux utilisateurs de planifier leurs vacances en trouvant des hébergements et des activités dans leur ville de destination.",
+      "objectives": [
+        "Implémenter une interface responsive (HTML/CSS)",
+        "Intégrer du contenu conformément à une maquette",
+        "Versionner un projet avec Git et GitHub"
+      ],
+      "images": ["/images/projects/booki-desktop.webp", "/images/projects/booki-mobile.webp"],
+      "remarques": ["Il s’agit d’un projet centré sur l’intégration et non fonctionnel. La difficulté du projet résulte dans les détails. Le design de la barre de recherche sur mobile m’a notamment donné matière à réfléchir. Sur mon repo GitHub, j’ai présenté deux manière de faire afin de correspondre aux attentes de la maquette."],
+      "github": "https://github.com/HeleneC-cyber/OC_P2_BOOKI",
+      "live": "https://helenec-cyber.github.io/OC_P2_BOOKI/"
+    },
+    {
+      "id": 2,
+      "title": "Sophie Bluel",
+      "type": "Projet OpenClassrooms",
+      "year": "2024",
+      "tags": ["HTML5", "CSS3", "JS"],
+      "desc": "Ce projet consiste à développer une page web interactive pour la photographe fictive Sophie Bluel, permettant d'afficher ses œuvres de manière dynamique avec une fonction filtre et de gérer ses oeuvres après connection.",
+      "objectives": [
+        "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
+        "Gérer les événements utilisateurs avec JavaScript",
+        "Manipuler les éléments du DOM avec JavaScript"
+      ],
+      "images": ["/images/projects/sophie-bluel-desktop.webp", "/images/projects/sophie-bluel-modal.webp"],
+      "remarques": [
+        "Il s’agit d’un projet dynamique permettant de s'initier à la logique de JavaScript et des fonctions. Egalement cela m'a permis d'appréhender les intérations avec l'API. La difficulté du projet résulte dans la gestion de la modale à deux vues et dans la récupération des éléments dans le DOM.", 
+      "Ici, la modale a été entièrement générée dynamiquement et j'ai privilégié l'utilisation de paramètres. Chaque modification, ajout ou suppression d'éléments dans la galerie est directement visible sans avoir à recharger la page."
+    ],
+      "github": "https://github.com/HeleneC-cyber/OC_P3_Portfolio-S-BLUEL",
+      "live": null
+    },
+    {
+      "id": 3,
+      "title": "Nina Carducci",
+      "type": "Projet OpenClassrooms",
+      "year": "2024",
+      "tags": ["HTLM5", "CSS3", "JS", "DevTools"],
+      "desc": "Ce projet consiste à déboger et optimiser le site web de la photographe fictive Nina Carducci, en améliorant les performances, l'accessibilité et du référencement du site web.",
+      "objectives": [
+        "Optimiser les performances d’un site web",
+        "Débugger un site web grâce aux Chrome DevTools",
+        "Amélioration de l'accessibilité pour rendre le site conforme aux standards et accessible à tous les utilisateurs.",
+        "Rédiger un cahier de recette pour tester un site"
+      ],
+      "images": ["/images/projects/nina-carducci-desktop.webp", "/images/projects/nina-carducci-mobile.webp"],
+      "remarques": ["Le projet permet d'appréhender des notions importantes comme le SEO, l'accessibilité, l'intérêt des balises structurelles, des métadonnées, les manières d'optimiser les performances avec la gestion notamment des images. Egalement, il donne l'occasion de comprendre le code d'un autre développeur afin d'effectuer les corrections de bugs et d'appréhender plusieurs manières de développer."],
+      "github": "https://github.com/HeleneC-cyber/OC_P4_Optimisation-N-CARDUCCI",
+      "live": "https://helenec-cyber.github.io/OC_P4_Optimisation-N-CARDUCCI/"
+    },
+    {
+      "id": 4,
+      "title": "Kasa",
+      "type": "Projet OpenClassrooms",
+      "year": "2024",
+      "tags": ["HTLM5", "Sass","React"],
+      "desc": "Ce projet consiste à créer une interface utilisateur responsive et dynamique en utilisant React, en se basant sur des maquettes fournies via Figma, afin de concevoir et développer une application web de location immobilière fictive Kasa.",
+      "objectives": [
+        "Initialiser une application avec Vite",
+        "Configurer la navigation entre les pages de l'application avec React Router",
+        "Développer des éléments de l'interface d'un site web grâce à des composants React",
+        "Créer des composant réutilisables (collapses, carrousel)",
+        "Gérer des erreurs de navigation avec une page 404",
+        "Mettre en œuvre des animations CSS",
+        "Développer une interface web avec Sass tout en respectant les maquettes Figma"
+      ],
+      "images": ["/images/projects/kasa-desktop.webp", "/images/projects/kasa-mobile.webp"],
+      "remarques": ["Le projet met en avant les compétences de développement front-end : capacité à créer des interfaces respectant des spécifications techniques, esthétiques avec un design précis, répondant aux attentes du client.",
+    "L'utilisation de Sass suit la logique des composants de React, en permettant l'importation uniquement du style nécessaire pour chaque composant, pour de meilleures performances, une meilleure lisibilité et meilleure maintenabilité."],
+    
+      "github": "https://github.com/HeleneC-cyber/OC_P5_Optimisation-KASA",
+      "live": "https://helenec-cyber.github.io/OC_P5_Optimisation-KASA/"
+    },
+    {
+      "id": 5,
+      "title": "Mon Vieux Grimoire",
+      "type": "Projet OpenClassrooms",
+      "year": "2025",
+      "tags": ["Node.js", "Express", "MongoDB","Helmet", "Multer", "Sharp" ],
+      "desc": "Ce projet consiste à concevoir et implémenter l'API RESTful pour Mon Vieux Grimoire, une plateforme fictive permettant aux utilisateurs de partager et de noter des livres. Le projet vise à fournir une infrastructure back-end sécurisée et efficace pour la gestion des utilisateurs, des livres et de leur notation. ",
+      "objectives": [
+        "Implémenter un modèle logique de données conformément à la réglementation",
+        "Mettre en œuvre des opérations CRUD de manière sécurisée",
+        "Stocker des données de manière sécurisée",
+        "Gérer l'inscription et l'authentification des utilisateurs de manière sécurisée, avec hachage des mots de passes et du user ID"
+      ],
+      "images": ["/images/projects/mon-vieux-grimoire-desktop.webp", "/images/projects/mon-vieux-grimoire-mongodb.webp"],
+      "remarques": ["Ce projet fut une première expérience de développement back-end. Il a permis de comprendre les fonctionnalités de Node.js et Express, ainsi que les différentes méthodes de gestion des données. Le projet a également permis de mettre en œuvre des opérations CRUD de manière sécurisée, en utilisant les fonctions de la bibliothèque MongoDB pour la gestion des données.",
+      "Les challenges du projet résident dans la sécurisation des données et de l'Api, cryptant les données avec Bcrypt, à l'aide des CORS, Helmet ou encore en limitant le nombre de requête à l'aide d'un limiteur; ainsi que dans l'optimisation des images que j'ai pu mettre en place avec Multer et Sharp."],
+      "github": "https://github.com/HeleneC-cyber/OC_P6_MON-VIEUX-GRIMOIRE/tree/main/backend",
+      "live": null
+    },
+    {
+      "id": 6,
+      "title": "Menu Maker by Qwenta",
+      "type": "Projet OpenClassrooms",
+      "year": "2025",
+      "tags": ["Agile", "Kanban", "Notion", "Veille tech"],
+      "desc": "Ce projet consiste à planifier et préparer le développement d'un site web destiné aux restaurateurs, leur permettant de créer et de mettre en page leurs menus facilement. Mon rôle était de développer un système de veille, de déterminer les spécifications techniques et d'organiser la gestion du projet.",
+      "objectives": [
+        "Découper une fonctionnalité en tâches pour préparer le développement",
+        "Mettre en place une méthode de veille technologique",
+        "Présenter la solution technique",
+        "Établir des spécifications techniques détaillées à partir de besoins fonctionnels, en expliquant les choix technologiques et leur utilité",
+        "Planifier le développement du site en utilisant un tableau Kanban, répertoriant toutes les tâches du projet selon quatre catégories : à faire, en cours, à tester, terminé"
+        
+      ],
+      "images": ["/images/projects/menu-maker-maquette.webp", "/images/projects/menu-maker-kanban.webp"],
+      "remarques": ["Ce projet fut ma première expérience de planification de projet. Pour se faire, la méthodologie Agile Scrum a été mise en place avec ainsi que l'utilsation de Kanban afin d'avoir une meilleure vue d'ensemble du projet et une gestion plus efficace des tâches. Ce choix est en adéquation avec l'esprit collaboratif de la méthode agile et permet une plus grande adaptabilité.",
+      "Egalement afin d'organiser efficacement le développement du site en répondant aux besoins spécifiques du client, j'ai consciencieusement choisi les technologies utilisées et rédigé les spécifications techniques."
+      ],
+      "github": null,
+      "live": "https://freckle-marscapone-356.notion.site/196a5108f6b080f3bb2bd08b40c82b81?v=196a5108f6b080eb906a000ce6b38bac"
+    },
+    {
+      "id": 7,
+      "title": "Bloodz",
+      "type": "Projet Perso",
+      "year": "2024",
+      "tags": ["HTML5", "CSS3", "React", "Xd"],
+      "desc": "Ce projet personnel correspondant à un site de rencontre fictif basé sur le groupe sanguin. Le design très rose et rouge rappelle le sang mais également l'amour. Il a été réalisé sous Adobe Xd.Ce projet m'a permis de m'essayer au framework React et de développer des compétences en développement web.",
+      "objectives": [
+        "Se former sur le framework React",
+        "S'initier à la conception d'un site dynamique",
+        "Essayer les apels API"
+      ],
+      "images": ["/images/projects/bloodz-desktop.webp", "/images/projects/bloodz-mobile.webp"],
+      "remarques": ["Bien que ce projet soit non fonctionnel et simplicite, il fait appel à une API gratuite (https://dummyjson.com/users) afin d'en récupérer des données et de générer des utilisateurs fictifs sur le site. Egalement j'ai pu tester la logique des fonctions notamment de filtres."
+    ],
+      "github": "https://github.com/HeleneC-cyber/Bloodz",
+      "live": "https://helenec-cyber.github.io/Bloodz/"
+    }
+  ]
+}
