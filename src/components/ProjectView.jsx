@@ -1,7 +1,13 @@
+// DEPENDENCIES
+import { Link } from "react-router"
+// COMPONENTS
 import H2 from "./H2"
 import SkillTag from "./SkillTag"
 import H3 from "./H3"
+import ProjectLink from "./ProjectLink"
+// SVG
 import arrowBullet from "../assets/icons/arrow-bullet.svg"
+// import githubSvg from "../assets/icons/github-light.svg"
 
 
 const ProjectView = ({ projectData }) => {
@@ -32,9 +38,14 @@ const ProjectView = ({ projectData }) => {
           </div>
         </div>
         <H3 title="Remarques" />
-          {projectData.remarques.map((remark) => {
-            return <p key={remark} className="mt-[20px]">{remark}</p>
-          })}
+        {projectData.remarques.map((remark) => {
+          return <p key={remark} className="mt-[20px]">{remark}</p>
+        })}
+        <div className="flex justify-center gap-[30px] mt-[80px] md:justify-end  md:mt-[100px] md:mr-[40px] ">
+          { projectData.github && <ProjectLink link={projectData.github} value="Github" /> }
+          { projectData.live && <ProjectLink link={projectData.live} value="Demo" />  }
+
+        </div>
 
       </div>
     </section>

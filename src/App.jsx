@@ -6,6 +6,7 @@ import Footer from './components/Footer.jsx'
 import Projects from "./pages/Projects.jsx"
 import Contact from "./pages/Contact.jsx"
 import PageNotFound from "./pages/PageNotFound.jsx"
+import Test from "./pages/Test.jsx"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/about-me" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/test" element={<Test />} />
         <Route path="*" element={<PageNotFound />} />
 
       </Routes>

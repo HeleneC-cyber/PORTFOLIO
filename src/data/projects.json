@@ -275,7 +275,7 @@
         }
       ],
       "remarques": [
-        "Bien que ce projet soit non fonctionnel et simplicite, il fait appel à une API gratuite (https://dummyjson.com/users) afin d'en récupérer des données et de générer des utilisateurs fictifs sur le site. Egalement j'ai pu tester la logique des fonctions notamment de filtres."
+        "Bien que ce projet soit non fonctionnel et simplicite, il fait appel à une API gratuite (dummyjson.com/users) afin d'en récupérer des données et de générer des utilisateurs fictifs sur le site. Egalement j'ai pu tester la logique des fonctions notamment de filtres."
       ],
       "github": "https://github.com/HeleneC-cyber/Bloodz",
       "live": "https://helenec-cyber.github.io/Bloodz/"

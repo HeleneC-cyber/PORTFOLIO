@@ -80,7 +80,7 @@
 
   .bm-item-list {
     background-color: var(--color-grey);
-    padding: 80px 100px;
+    padding: 80px;
 }
 
 .bm-burger-bars {
@@ -90,6 +90,7 @@
 
 .bm-menu-wrap {
     top: 0;
+    max-width: 100%;
 }
 
 .bm-cross {
@@ -110,3 +111,8 @@
 .no-before *::before {
  display: none;
 }
+
+/* .slick-slider {
+  position: relative;
+  width: 100%;
+} */
