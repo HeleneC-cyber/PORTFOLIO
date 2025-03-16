@@ -78,6 +78,8 @@
     color: var(--color-dark);
   } */
 
+
+  /* BURGER MENU --REACT-BURGER-MENU */
   .bm-item-list {
     background-color: var(--color-grey);
     padding: 80px;
@@ -112,7 +114,8 @@
  display: none;
 }
 
-/* .slick-slider {
-  position: relative;
-  width: 100%;
-} */
+
+/* SLIDER --REACT-SLICK */
+.slick-current .bg-sand {
+background-color: var(--color-red);
+}

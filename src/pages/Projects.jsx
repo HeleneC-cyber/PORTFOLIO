@@ -3,6 +3,7 @@ import { useState } from "react"
 // COMPONENTS
 import Header from "../components/Header"
 import H1 from "../components/H1"
+import SimpleSlider from "../components/Slider"
 import ProjectView from "../components/ProjectView"
 // DATA
 import data from "../data/projects.json"
@@ -11,31 +12,28 @@ import data from "../data/projects.json"
 
 
 
+
 const Projects = () => {
-  const [id, setId] = useState(1)
+  const [id, setId] = useState(0)
   return (
     <>
       <Header />
       <div className="relative">
-        <div className="hidden md:block md:bg-red md:w-[30%] md:h-full  md:absolute  md:top-[-50px] md:right-0 md:-z-1 ">
+        <div className="hidden md:block md:bg-red md:w-[30%] md:h-full  md:absolute  md:top-0 md:right-0 md:-z-1 ">
         </div>
 
-        <main className="full-container font-primary mt-[20px] md:main-container md:mt-[50px] md:flex md:gap-[40px] md:justify-center md:items-start ">
+        <main className="full-container font-primary pt-[20px] md:main-container md:pt-[50px] md:flex md:items-stretch md:gap-[40px]">
+
+
+          {/* DESKTOP LEFT SIDE : SLIDER */}
           <div className="mx-[20px] md:mx-[0px]">
             <H1 title="Mes projets" />
-
-
-            <div className="w-[390px] max-w-full h-[300px] bg-orange text-2xl">
-
-              {/* <Slider /> */}
-    
-
-            </div>
-
-
-
+            {/* SLIDER */}
+              <SimpleSlider projectData={data.projects} setActiveProjectId={setId} />
           </div>
 
+
+          {/* DESKTOP RIGHT SIDE : PROJECT VIEW */}
           <ProjectView projectData={data.projects[id]} />
 
 

@@ -14,12 +14,11 @@ const Form = () => {
     user_email: "",
     message: ""
   })
+  const form = useRef()
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
-
-  const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()

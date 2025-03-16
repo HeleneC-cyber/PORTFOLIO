@@ -13,7 +13,7 @@
         "Motion",
         "Figma"
       ],
-      "desc": "Ce projet consiste à concevoir et développer un portfolio, visant à présenter mes compétences, expérience et réalisations en tant que développeur. Ce portfolio sert de vitrine professionnelle pour mettre en avant mes projets, mon parcours, ma progression et mes compétences techniques.",
+      "desc": "Ce projet from scratch consiste à concevoir et développer un portfolio, visant à présenter mes compétences, ma créativité, expériences et réalisations en tant que développeur. Ce portfolio sert de vitrine professionnelle pour mettre en avant mes projets, mon parcours, ma progression et mes compétences techniques.",
       "objectives": [
         "Déployer un site statique en ligne",
         "Mettre en avant mes réalisations et mes compétences techniques",
@@ -41,6 +41,39 @@
     },
     {
       "id": 1,
+      "title": "BLOODZ",
+      "type": "Projet Perso",
+      "year": "2024",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "React",
+        "Adobe Xd"
+      ],
+      "desc": "Etant qu'autodidacte, ce projet personnel est mon premier site fictif abouti en React. Il correspondant à un site de rencontre fictif basé sur les groupes sanguins. Le design très rose et rouge rappelle le sang mais également l'amour, le rose adoucissant. Il a été réalisé sous Adobe Xd. Ce projet m'a permis de m'essayer au framework React et de développer des compétences en développement web.",
+      "objectives": [
+        "Se former sur le framework React",
+        "S'initier à la conception d'un site dynamique",
+        "Essayer les apels API"
+      ],
+      "images": [
+        {
+          "src": "/images/projects/bloodz-desktop.webp",
+          "alt": "Capture d'écran du site Bloodz sur ordinateur"
+        },
+        {
+          "src": "/images/projects/bloodz-mobile.webp",
+          "alt": "Capture d'écran du site Bloodz sur mobile"
+        }
+      ],
+      "remarques": [
+        "Bien que ce projet soit non fonctionnel et simplicite, il fait appel à une API gratuite (dummyjson.com/users) afin d'en récupérer des données et de générer des utilisateurs fictifs sur le site. Egalement j'ai pu tester la logique des fonctions notamment de filtres."
+      ],
+      "github": "https://github.com/HeleneC-cyber/Bloodz",
+      "live": "https://helenec-cyber.github.io/Bloodz/"
+    },
+    {
+      "id": 2,
       "title": "BOOKI",
       "type": "Projet OpenClassrooms",
       "year": "2024",
@@ -71,7 +104,7 @@
       "live": "https://helenec-cyber.github.io/OC_P2_BOOKI/"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "SOPHIE BLUEL",
       "type": "Projet OpenClassrooms",
       "year": "2024",
@@ -104,12 +137,12 @@
       "live": null
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "NINA CARDUCCI",
       "type": "Projet OpenClassrooms",
       "year": "2024",
       "tags": [
-        "HTLM5",
+        "HTML5",
         "CSS3",
         "JS",
         "DevTools"
@@ -138,12 +171,12 @@
       "live": "https://helenec-cyber.github.io/OC_P4_Optimisation-N-CARDUCCI/"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "KASA",
       "type": "Projet OpenClassrooms",
       "year": "2024",
       "tags": [
-        "HTLM5",
+        "HTML5",
         "Sass",
         "React"
       ],
@@ -175,7 +208,7 @@
       "live": "https://helenec-cyber.github.io/OC_P5_Optimisation-KASA/"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Mon Vieux Grimoire",
       "type": "Projet OpenClassrooms",
       "year": "2025",
@@ -192,7 +225,7 @@
         "Implémenter un modèle logique de données conformément à la réglementation",
         "Mettre en œuvre des opérations CRUD de manière sécurisée",
         "Stocker des données de manière sécurisée",
-        "Gérer l'inscription et l'authentification des utilisateurs de manière sécurisée, avec hachage des mots de passes et du user ID"
+        "Gérer l'inscription et l'authentification des utilisateurs de manière sécurisée, avec hachage des mots de passe et du user ID"
       ],
       "images": [
         {
@@ -205,14 +238,14 @@
         }
       ],
       "remarques": [
-        "Ce projet fut une première expérience de développement back-end. Il a permis de comprendre les fonctionnalités de Node.js et Express, ainsi que les différentes méthodes de gestion des données. Le projet a également permis de mettre en œuvre des opérations CRUD de manière sécurisée, en utilisant les fonctions de la bibliothèque MongoDB pour la gestion des données.",
+        "Ce projet fut une première expérience de développement back-end. Il a permis de comprendre les fonctionnalités de Node.js et Express, ainsi que les différentes méthodes de gestion des données. Le projet a également permis de mettre en œuvre des opérations CRUD de manière sécurisée, utilisant MongoDB comme base de données.",
         "Les challenges du projet résident dans la sécurisation des données et de l'Api, cryptant les données avec Bcrypt, à l'aide des CORS, Helmet ou encore en limitant le nombre de requête à l'aide d'un limiteur; ainsi que dans l'optimisation des images que j'ai pu mettre en place avec Multer et Sharp."
       ],
       "github": "https://github.com/HeleneC-cyber/OC_P6_MON-VIEUX-GRIMOIRE/tree/main/backend",
       "live": null
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Menu Maker by Qwenta",
       "type": "Projet OpenClassrooms",
       "year": "2025",
@@ -241,44 +274,11 @@
         }
       ],
       "remarques": [
-        "Ce projet fut ma première expérience de planification de projet. Pour se faire, la méthodologie Agile Scrum a été mise en place avec ainsi que l'utilsation de Kanban afin d'avoir une meilleure vue d'ensemble du projet et une gestion plus efficace des tâches. Ce choix est en adéquation avec l'esprit collaboratif de la méthode agile et permet une plus grande adaptabilité.",
+        "Ce projet fut ma première expérience de planification de projet. Pour se faire, la méthodologie Agile Scrum a été mise en place avec ainsi que l'utilisation de Kanban afin d'avoir une meilleure vue d'ensemble du projet et une gestion plus efficace des tâches. Ce choix est en adéquation avec l'esprit collaboratif de la méthode agile et permet une plus grande adaptabilité.",
         "Egalement afin d'organiser efficacement le développement du site en répondant aux besoins spécifiques du client, j'ai consciencieusement choisi les technologies utilisées et rédigé les spécifications techniques."
       ],
       "github": null,
       "live": "https://freckle-marscapone-356.notion.site/196a5108f6b080f3bb2bd08b40c82b81?v=196a5108f6b080eb906a000ce6b38bac"
-    },
-    {
-      "id": 7,
-      "title": "BLOODZ",
-      "type": "Projet Perso",
-      "year": "2024",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "React",
-        "Adobe Xd"
-      ],
-      "desc": "Ce projet personnel correspondant à un site de rencontre fictif basé sur les groupes sanguins. Le design très rose et rouge rappelle le sang mais également l'amour, le rose adoucissant. Il a été réalisé sous Adobe Xd. Ce projet m'a permis de m'essayer au framework React et de développer des compétences en développement web.",
-      "objectives": [
-        "Se former sur le framework React",
-        "S'initier à la conception d'un site dynamique",
-        "Essayer les apels API"
-      ],
-      "images": [
-        {
-          "src": "/images/projects/bloodz-desktop.webp",
-          "alt": "Capture d'écran du site Bloodz sur ordinateur"
-        },
-        {
-          "src": "/images/projects/bloodz-mobile.webp",
-          "alt": "Capture d'écran du site Bloodz sur mobile"
-        }
-      ],
-      "remarques": [
-        "Bien que ce projet soit non fonctionnel et simplicite, il fait appel à une API gratuite (dummyjson.com/users) afin d'en récupérer des données et de générer des utilisateurs fictifs sur le site. Egalement j'ai pu tester la logique des fonctions notamment de filtres."
-      ],
-      "github": "https://github.com/HeleneC-cyber/Bloodz",
-      "live": "https://helenec-cyber.github.io/Bloodz/"
     }
   ]
 }

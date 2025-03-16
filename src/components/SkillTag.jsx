@@ -1,4 +1,6 @@
-
+// DEPENDENCIES
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"
 
 
 const SkillTag = ({ tags }) => {
@@ -32,11 +34,22 @@ const SkillTag = ({ tags }) => {
 
 
   return (
-    <ul className="flex gap-[5px] flex-wrap items-center mt-[10px] mb-[20px]">
+    <motion.ul
+      className="flex gap-[5px] flex-wrap items-center mt-[10px] mb-[20px]"
+      initial={{ scale: 0.9 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 1.2 }}
+    >
       {tags.map((tag) => {
-        return <li key={tag} className={`font-secondary text-sm px-[10px] rounded-[25px] pt-[4px] pb-[2px] ${getTagColor(tag)}`}>{tag}</li>
+        return <motion.li
+          key={tag}
+          className={`font-secondary text-sm px-[10px] rounded-[25px] pt-[4px] pb-[2px] cursor-default ${getTagColor(tag)}`}
+          whileHover={{ scale: 1.2 }}
+        >
+          {tag}
+        </motion.li>
       })}
-    </ul>
+    </motion.ul>
   )
 }
 

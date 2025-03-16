@@ -27,8 +27,7 @@ const Contact = () => {
             <motion.p
               className="mb-[20px] md:mb-[50px]"
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 1 }}
             >
               <strong className="font-p-bold ">Un projet, une opportunité ? </strong>
@@ -36,16 +35,14 @@ const Contact = () => {
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 1 }}
             >
               Vous pouvez aussi me retrouver sur :</motion.p>
             <motion.ul
               className="flex gap-[30px] mt-[20px] md:mt-[30px] justify-center md:justify-start md:ml-[30px]"
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 1 }}
             >
               <li>
@@ -71,34 +68,32 @@ const Contact = () => {
                   to="mailto:canovas.helene@gmail.com?subject=Demande de contact&body=Bonjour, je souhaite vous contacter à propos de..."
                   aria-label="Mail"
                   className="cursor-pointer"
-                ><motion.img
+                >
+                  <motion.img
                     src={email} alt="icone mail"
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
-                  /></Link>
+                  />
+                </Link>
               </li>
             </motion.ul>
-            <motion.div 
-            className="relative mt-[180px] flex justify-center hidden md:block" 
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 1 }}
+            <motion.div
+              className="relative mt-[180px] flex justify-center hidden md:block"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 1 }}
             >
               <img src={womanLaptop} alt="Femme assise devant un ordinateur avecun thé" />
-
               <Blob color="#357F76" position="absolute -bottom-[190px] -left-[50px] -z-1" />
-
             </motion.div>
           </div>
 
           {/* SIDE FORM */}
-          <motion.div 
-          className=" w-[390px] max-w-full md:w-[500px] md:mr-[40px] relative"
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 1 }}
+          <motion.div
+            className=" w-[390px] max-w-full md:w-[500px] md:mr-[40px] relative"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
           >
             <img src={womanLaptopMobile} alt="Femme devant un ordinateur portable" className="block md:hidden absolute bottom-full right-0" />
             <Form />

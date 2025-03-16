@@ -15,9 +15,9 @@ const Home = () => {
       <div className="opacity-0">
         <Header />
       </div>
-      <main className="font-primary text-dark relative min-h-screen flex flex-col items-center mb-[80px]">
+      <main className="font-primary text-dark relative min-h-[10%] flex flex-col items-center mb-[80px]">
         <motion.h1
-          className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 leading-[1.2] text-2xl w-[420px] max-w-[95%] md:w-[720px] after:size-[20px] md:after:size-[30px] after:bg-red after:rounded-full after:content-[''] after:inline-block after:ml-[10px] md:text-4xl"
+          className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 leading-[1.2] text-2xl w-[420px] max-w-[95%] md:w-[720px] after:size-[20px] md:after:size-[30px] after:bg-red after:rounded-full after:content-[''] after:inline-block after:ml-[5px] md:after:ml-[10px] md:text-4xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, top: 80, }}
           transition={{
@@ -68,7 +68,7 @@ const Home = () => {
 
           {/* BLOBS */}
           <motion.svg
-            className="absolute bottom-[30px] -z-2 max-w-[100%]"
+            className="absolute bottom-[30px] -z-2 max-w-[100%] md:block hidden"
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
             initial={{ opacity: 0 }}

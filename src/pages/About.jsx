@@ -9,6 +9,7 @@ import H1 from "../components/H1"
 import H2 from "../components/H2"
 import SkillBlock from "../components/SkillBlock"
 import Collapse from "../components/Collapse"
+import BtnScrollToTop from "../components/BtnScrollToTop"
 // DATA
 import data from "../data/collapses.json"
 import techData from "../data/techIcons.json"
@@ -19,7 +20,6 @@ import rabbitIllustration from "../assets/illustration-rabbit.png"
 import womanFlower from "../assets/flower-woman.png"
 import womanFlowerMobile from "../assets/flower-woman-mini.png"
 // ICON SVG
-import arrowTop from "../assets/icons/arrow-move-up.svg"
 import cardContact from "../assets/icons/card-contact.svg"
 import downloadSvg from "../assets/icons/download-svg.svg"
 import smoke from "../assets/fumee-gif.gif"
@@ -30,13 +30,6 @@ import smoke from "../assets/fumee-gif.gif"
 
 
 const About = () => {
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <>
@@ -133,7 +126,7 @@ const About = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{
-                      opacity: { delay: 0.4, duration: 1 }
+                      opacity: { delay: 0.3, duration: 1 }
                     }}
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
@@ -145,6 +138,7 @@ const About = () => {
             </div>
           </div>
         </section>
+
 
         <section className=" py-[70px] lg:py-[100px] bg-light mt-[100px] relative">
           <Wave
@@ -203,8 +197,8 @@ const About = () => {
           </div>
         </section>
 
-        <section
-          className="main-container pt-[40px] md:pt-[50px] pb-[100px] md:pb-[150px] ">
+
+        <section className="main-container pt-[40px] md:pt-[50px] pb-[100px] md:pb-[150px] ">
           <H2 title="Mon parcours" customClass="ml-[10px]" />
           <div className="md:flex md:justify-around md:items-start md:gap-[20px] mt-[30px] md:mt-[50px] ">
             <motion.img
@@ -215,14 +209,14 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 1 }}
             />
-            {/* COLLAPSES */}
             <motion.div
               className="w-full md:max-w-[500px] font-primary no-before "
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 1 }}
-            >
+              >
+              {/* COLLAPSES */}
               {data?.collapses.map(item => {
                 return <Collapse key={item.id} data={item} />
               })}
@@ -230,21 +224,13 @@ const About = () => {
                 <strong className=" font-p-bold">Mon objectif ? </strong>
                 Trouver une alternance (front/full-stack) ou un poste en développement front-end où je pourrai m’épanouir et apporter ma touche, que ce soit en full remote ou dans la région de Dijon.
               </div>
+
               {/* BUTTON FOR DESKTOP */}
-              <button
-                onClick={scrollToTop}
-                aria-label="Bouton pour retourner en haut de la page"
-                className="mx-auto mt-[80px] cursor-pointer hidden md:block"
-              >
-                <motion.img
-                  src={arrowTop} alt="flèche vers un bouton"
-                  className="size-[50px]"
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                />
-              </button>
+              <BtnScrollToTop customClass={"mx-auto mt-[80px] cursor-pointer hidden md:block"} />
+          
             </motion.div>
           </div>
+
           {/* BUTTON AND IMG FOR MOBILE */}
           <div className="flex md:hidden mt-[60px] justify-around items-center">
             <motion.img
@@ -255,7 +241,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 1 }}
             />
-            <motion.button
+            {/* <motion.button
               onClick={scrollToTop}
               aria-label="Bouton pour retourner en haut de la page"
               className="cursor-pointer mr-[20px]"
@@ -270,7 +256,9 @@ const About = () => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               />
-            </motion.button>
+            </motion.button> */}
+            <BtnScrollToTop customClass={"mr-[20px]"} />
+
           </div>
         </section>
       </main>
