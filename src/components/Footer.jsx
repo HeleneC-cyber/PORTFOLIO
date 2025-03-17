@@ -7,7 +7,6 @@ import { createPortal } from 'react-dom'
 //COMPONENTS
 import CreditsModal from './CreditsModal';
 //SVG
-import copyright from "../assets/icons/copyright.svg"
 import { useState } from "react";
 
 
@@ -26,16 +25,13 @@ const Footer = () => {
     >
       <div className="main-container flex flex-col md:flex-row items-center justify-between text-sand font-primary text-sm gap-[10px]  ">
         <p className="">Tous droits réservés</p>
-        <div className="flex flex-row items-center">
-          <img src={copyright} alt="icone copyright" className="size-[23px] mr-[5px]" />
-          <p>Hélène CANOVAS, 2025</p>
-        </div>
+        <p>© Hélène CANOVAS, 2025</p>
 
-        <button 
-        className="cursor-pointer hover:text-orange"
-        onClick={() => setIsOpen(true)} 
+        <button
+          className="cursor-pointer hover:text-orange"
+          onClick={() => setIsOpen(true)}
         >@ Crédits</button>
-        {createPortal(<CreditsModal setIsOpen={setIsOpen} isOpen={isOpen}/>, document.body)}
+        {createPortal(<CreditsModal setIsOpen={setIsOpen} isOpen={isOpen} />, document.body)}
       </div>
     </motion.footer>
   )

@@ -1,15 +1,19 @@
 import { useState } from "react"
 
 
-const Input = ({ label, id, type, name, placeholder, value, onChange, regex, errorMessage }) => {
+const Input = ({ label, id, type, name, placeholder, value, onChange, regex, errorMessage, isError }) => {
 
   const [error, setError] = useState("")
   const handleValidation = (e) => {
     const val = e.target.value.trim()
     if (regex && !regex.test(val)) {
       setError(errorMessage || "Format invalide")
+      // VAR FOR FORM VALIDATE
+      isError(true)
     } else {
       setError("")
+      isError(false)
+
     }
     onChange(e)
   }

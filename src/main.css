@@ -1,121 +1,136 @@
-/* @import "tailwindcss"; */
-/* RESET */
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
-
-/* FONTS */
-@font-face {
-    font-family: "MontserratAlternates Regular";
-    src: url("/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf");
-}
-@font-face {
-    font-family: "MontserratAlternates Bold";
-    src: url("/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf");
-}
-@font-face {
-    font-family: "Mogra";
-    src: url("/fonts/Mogra/Mogra-Regular.ttf");
-}
-
-/* THEME & VARIABLES*/
-@theme {
-
-    /* FONT FAMILY */
-    --font-primary: "MontserratAlternates Regular";
-    --font-p-bold: "MontserratAlternates Bold";
-    --font-secondary: "Mogra";
-
-    /* FONT SIZE */
-    --text-2xs: 14px;
-    --text-xs: 16px;
-    --text-sm: 18px;
-    --text-md: 20px;
-    --text-lg: 24px;
-    --text-xl: 32px;
-    --text-2xl: 36px;
-    /* --text-3xl: 40px; */
-    --text-3xl: 48px;
-    --text-4xl: 64px;
-    /* --text-404-mobile: 96px;
-    --text-404-desktop: 128px; */
-
-    /* COLORS */
-    --color-dark: #081645;
-    --color-grey: #34465C;
-    --color-green: #357F76;
-    --color-red: #F95D44;
-    --color-orange: #FC8B2B;
-    --color-sand: #FBDFBA;
-    --color-light: #FEF4EB;
-    --color-white: #FFFFFF;
+/* ---------------------------------------- */
+  /* RESET */
+  @layer theme, base, components, utilities;
+  @import "tailwindcss/theme.css" layer(theme);
+  @import "tailwindcss/preflight.css" layer(base);
+  @import "tailwindcss/utilities.css" layer(utilities);
 
 
-    /* BREAKPOINTS */
-    /* 320px taille mini  */
-    --breakpoint-md:992px;
-    /* --breakpoint-l-exception:1300px; */
-    --breakpoint-lg:1440px;
+/* ---------------------------------------- */
+  /* FONTS */
+  @font-face {
+      font-family: "MontserratAlternates Regular";
+      src: url("/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf");
+  }
+  @font-face {
+      font-family: "MontserratAlternates Bold";
+      src: url("/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf");
+  }
+  @font-face {
+      font-family: "Mogra";
+      src: url("/fonts/Mogra/Mogra-Regular.ttf");
+  }
+
+/* ---------------------------------------- */
+  /* THEME & VARIABLES */
+  @theme {
+
+      /* FONT FAMILY */
+      --font-primary: "MontserratAlternates Regular";
+      --font-p-bold: "MontserratAlternates Bold";
+      --font-secondary: "Mogra";
+
+      /* FONT SIZE */
+      --text-2xs: 14px;
+      --text-xs: 16px;
+      --text-sm: 18px;
+      --text-md: 20px;
+      --text-lg: 24px;
+      --text-xl: 32px;
+      --text-2xl: 36px;
+      --text-3xl: 48px;
+      --text-4xl: 64px;
+      /* --text-404-mobile: 96px;
+      --text-404-desktop: 128px; */
+
+      /* COLORS */
+      --color-dark: #081645;
+      --color-grey: #34465C;
+      --color-green: #357F76;
+      --color-red: #F95D44;
+      --color-orange: #FC8B2B;
+      --color-sand: #FBDFBA;
+      --color-light: #FEF4EB;
+      --color-white: #FFFFFF;
+
+
+      /* BREAKPOINTS */
+      /* 320px taille mini  */
+      --breakpoint-md:992px;
+      --breakpoint-lg:1440px;
+      
+  }
+
+  @utility main-container {
+      max-width: 1400px;
+      width:92%;
+      /* padding: 0 20px; */
+      margin: 0 auto;
+    }
     
-}
-
-@utility main-container {
-    max-width: 1400px;
-    width:92%;
-    /* padding: 0 20px; */
-    margin: 0 auto;
-  }
-  
-@utility full-container {
-    max-width: 1400px;
-    width:100%;
-    /* padding: 0 20px; */
-    margin: 0 auto;
-  }
-  /* body {
-    font-family: var(--font-primary);
-    color: var(--color-dark);
-  } */
+  @utility full-container {
+      max-width: 1400px;
+      width:100%;
+      /* padding: 0 20px; */
+      margin: 0 auto;
+    }
 
 
+/* ---------------------------------------- */
   /* BURGER MENU --REACT-BURGER-MENU */
   .bm-item-list {
     background-color: var(--color-grey);
     padding: 80px;
-}
+  }
 
-.bm-burger-bars {
-    background-color: var(--color-grey);
-    border-radius: 5px;
-}
+  .bm-burger-bars {
+      background-color: var(--color-grey);
+      border-radius: 5px;
+  }
 
-.bm-menu-wrap {
-    top: 0;
-    max-width: 100%;
-}
+  .bm-menu-wrap {
+      top: 0;
+      max-width: 100%;
+  }
 
-.bm-cross {
-    background-color: var(--color-white);
-    height: 21px !important;
-    border-radius: 5px;
-}
+  .bm-cross {
+      background-color: var(--color-white);
+      height: 21px !important;
+      border-radius: 5px;
+  }
 
-.bm-cross-button {
-    top: 20px !important;
-    right: 20px !important;
-}
+  .bm-cross-button {
+      top: 20px !important;
+      right: 20px !important;
+  }
 
-.bm-overlay {
-    display: none;
-}
+  .bm-overlay {
+      display: none;
+  }
 
-.no-before *::before {
- display: none;
-}
+  .no-before *::before {
+  display: none;
+  }
 
 
-/* SLIDER --REACT-SLICK */
-.slick-current .bg-sand {
-background-color: var(--color-red);
-}
+/* ---------------------------------------- */
+  /* SLIDER --REACT-SLICK */
+  .slick-current .bg-sand {
+    background-color: var(--color-red);
+  }
+
+
+/* ---------------------------------------- */
+  /* SNACKBAR --MUI */
+  @keyframes progress {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+
+  .animate-progress {
+    animation: progress 6s linear forwards;
+  }

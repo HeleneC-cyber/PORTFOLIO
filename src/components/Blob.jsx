@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
+
+
 const Blob = ({ color, position }) => {
   return (
     <motion.svg id="visual" viewBox="0 0 600 600" width="600" height="600" className={position} >
@@ -24,7 +26,7 @@ const Blob = ({ color, position }) => {
         ></motion.path>
       </g>
     </motion.svg>
-  );
-};
+  )
+}
 
 export default Blob;
