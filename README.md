@@ -1,12 +1,65 @@
-# React + Vite
+# PORTFOLIO - PROJET OC 8
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<i>Travail réalisé from scratch, dans le but de me présenter, présenter mes projets et réalisations, de lister mes compétences et de les démontrer au travers du code du site lui-même.<br>
+Ce projet constitue à la fois un projet personnel et un projet professionnel, projet de fin de formation "Développeur Web" d'OpenClassrooms.</i>
 
-Currently, two official plugins are available:
+![Séparateur coloré](./public/images/readme/séparateur.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="./public/images/projects/portfolio-desktop.webp" alt="Capture d'écran de mon Portfolio sur ordinateur">
+  <img src="./public/images/projects/portfolio-mobile.webp" alt="Capture d'écran de mon Portfolio sur mobile">
+</p>
 
-## Expanding the ESLint configuration
+![Séparateur coloré](./public/images/readme/séparateur.png)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Objectifs
+- **Déployer** un site statique en ligne
+- Mettre en avant mes réalisations et mes compétences techniques
+- **Expérimenter** des librairies et animations",
+- Créer une **identité professionnelle**",
+- **Améliorer** mes compétences en design et performance"
+<br><br>
+
+## 💡 Technologies utilisées
+- HTML5
+- CSS3
+- React
+- TailwindCSS
+- Motion
+- Material UI
+- Figma
+<br><br>
+
+![Séparateur coloré](./public/images/readme/séparateur.png)
+
+## 📂 Structure
+📁 OC_P8_PORTFOLIO<br>
+│── 📁 public/<br> 
+│── 📁 src/<br> 
+│    └── 📁 assets/<br> 
+│    └── 📁 components/<br> 
+│    └── 📁 data/<br> 
+│    └── 📁 pages/<br> 
+│    └── App.jsx/<br> 
+│    └── main.css/<br> 
+│    └── main.jsx/<br> 
+│── index.html <br>
+│── README.md
+<br><br>
+
+![Séparateur coloré](./public/images/readme/séparateur.png)
+
+## 💻 Démonstration en ligne
+👉 Voir le site en ligne [ICI](https://helenecanovas.fr)
+<br><br>
+
+## 📝 Notes additionnelles
+- Ce projet offrant une plus grande liberté j'ai décidé d'utiliser les frameworks React et Tailwind CSS pour le développement du site. Cette solution me permet de concevoir un portfolio statique et dynamique rapidement et de manière optimisée et performante. Egalement pour le rendre plus attrayant, et l'animer facilement j'ai utilisé la librairie Framer Motion ainsi que les animations de React-Wavify.
+- Pour la conception des différentes pages du portfolio, j'ai utilisé Figma ainsi qu'Illustrator afin de personnaliser mes images vectorisées.
+- Ce projet ayant pour but d'entrer en contact avec de futurs employeurs et collègues, le formulaire de contact intégré est fonctionnel et facile à utiliser. Il nous permettra de communiquer si vous le souhaitez !"
+<br><br>
+
+![Séparateur coloré](./public/images/readme/séparateur.png)
+
+## 📬 Contact
+Pour toute question ou suggestion, n'hésitez pas à me contacter sur [LinkedIn](https://www.linkedin.com/in/helene-canovas-48710b141/)

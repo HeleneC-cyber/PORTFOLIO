@@ -11,6 +11,7 @@
         "React",
         "TailwindCSS",
         "Motion",
+        "Material UI",
         "Figma"
       ],
       "desc": "Ce projet from scratch consiste à concevoir et développer un portfolio, visant à présenter mes compétences, ma créativité, expériences et réalisations en tant que développeur. Ce portfolio sert de vitrine professionnelle pour mettre en avant mes projets, mon parcours, ma progression et mes compétences techniques.",
@@ -18,7 +19,7 @@
         "Déployer un site statique en ligne",
         "Mettre en avant mes réalisations et mes compétences techniques",
         "Expérimenter des librairies et animations",
-        "Créer une idéntité professionnelle",
+        "Créer une identité professionnelle",
         "Améliorer mes compétences en design et performance"
       ],
       "images": [
