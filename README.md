@@ -1,4 +1,4 @@
-# PORTFOLIO - PROJET OC 8
+# PORTFOLIO
 
 <i>Travail réalisé from scratch, dans le but de me présenter, présenter mes projets et réalisations, de lister mes compétences et de les démontrer au travers du code du site lui-même.<br>
 Ce projet constitue à la fois un projet personnel et un projet professionnel, projet de fin de formation "Développeur Web" d'OpenClassrooms.</i>
@@ -15,7 +15,7 @@ Ce projet constitue à la fois un projet personnel et un projet professionnel, p
 ## 🎯 Objectifs
 - **Déployer** un site statique en ligne
 - Mettre en avant mes réalisations et mes compétences techniques
-- **Expérimenter** des librairies et animations",
+- **Expérimenter** des librairies et animations,
 - Créer une **identité professionnelle**",
 - **Améliorer** mes compétences en design et performance"
 <br><br>
