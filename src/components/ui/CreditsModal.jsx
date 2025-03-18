@@ -1,8 +1,12 @@
-import React from "react"
-import H3 from "./H3"
-import womanPencil from "../assets/woman-pencil.png"
+// DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion"
+// COMPONENTS
+import H3 from "../typography/H3"
+// IMAGE
+import womanPencil from "../../assets/woman-pencil.png"
+
+
 
 const CreditsModal = ({ isOpen, setIsOpen }) => {
   return (
@@ -23,7 +27,6 @@ const CreditsModal = ({ isOpen, setIsOpen }) => {
               <rect x="3.53516" width="25" height="5" rx="2.5" transform="rotate(45 3.53516 0)" fill="#081645" />
             </svg>
 
-            {/* customClass="mx-auto w-fit" */}
             <H3 title="Crédits" customClass="mx-auto" />
             <p className="font-primary text-md mt-[30px]">Merci aux artistes dont les oeuvres, disponible sur iStock, ont enrichi ce projet :</p>
             <div className="flex items-end justify-between">

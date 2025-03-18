@@ -1,8 +1,10 @@
+// DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 import { slide as Menu } from "react-burger-menu"
 import { Link } from "react-router"
-import logo from "../assets/logo.svg"
+// SVG
+import logo from "../../assets/logo.svg"
 
 const Header = () => {
   return (

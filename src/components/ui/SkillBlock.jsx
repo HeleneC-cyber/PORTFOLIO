@@ -1,4 +1,6 @@
-import H3 from "./H3";
+// COMPONENTS
+import H3 from "../typography/H3";
+
 
 
 const SkillBlock = ({ techData }) => {

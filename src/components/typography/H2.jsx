@@ -1,5 +1,7 @@
+// DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
+
 
 
 const H2 = ({ title, customClass }) => {

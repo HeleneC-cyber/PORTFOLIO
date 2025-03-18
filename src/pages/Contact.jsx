@@ -3,10 +3,10 @@ import { Link } from "react-router"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
 // COMPONENTS
-import Header from "../components/Header"
-import H1 from "../components/H1"
-import Form from "../components/Form"
-import Blob from "../components/Blob"
+import Header from "../components/navigation/Header"
+import H1 from "../components/typography/H1"
+import Form from "../components/form/Form"
+import Blob from "../components/ui/Blob"
 // IMAGE
 import womanLaptopMobile from "../assets/woman-laptop.png"
 import womanLaptop from "../assets/woman-laptop-with-circle.png"
@@ -20,6 +20,7 @@ const Contact = () => {
   return (
     <>
       <Header />
+      {/* LEFT DESKTOP SIDE : CONTACT INFO */}
       <main className="main-container font-primary text-dark text-xs mt-[20px] md:text-md md:mt-[50px]">
         <H1 title="Contact" />
         <div className="flex flex-col mt-[30px] justify-between items-center gap-[158px] md:flex-row md:items-start md:gap-[40px] mb-[90px] md:mb-[180px]">
@@ -88,7 +89,7 @@ const Contact = () => {
             </motion.div>
           </div>
 
-          {/* SIDE FORM */}
+          {/* RIGHT DESKTOP SIDE : FORM */}
           <motion.div
             className=" w-[390px] max-w-full md:w-[500px] md:mr-[40px] relative"
             initial={{ opacity: 0, x: 20 }}

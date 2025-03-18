@@ -25,7 +25,7 @@ const ProjectLink = ({link, value }) => {
 
   return (
     <motion.a
-    to={link}
+    href={link}
     target="_blank"
     className="flex justify-center font-p-bold text-md text-white hover:text-dark hover:bg-orange bg-dark p-[14px] rounded-[15px] group gap-[10px] cursor-pointer"
     whileHover={{ scale: 1.2 }}

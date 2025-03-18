@@ -38,7 +38,7 @@
         "Ce projet ayant pour but d'entrer en contact avec de futurs employeurs et collègues, le formulaire de contact intégré est fonctionnel et facile à utiliser. Il nous permettra de communiquer si vous le souhaitez !"
       ],
       "github": "https://github.com/HeleneC-cyber/PORTFOLIO",
-      "live": "https://www.figma.com/design/vImZhMZO6I7kNVAPzkKtbG/Portfolio?node-id=0-1&m=dev&t=55it6kj4r0KLcI9k-1"
+      "live": null
     },
     {
       "id": 1,
@@ -242,7 +242,7 @@
         "Ce projet fut une première expérience de développement back-end. Il a permis de comprendre les fonctionnalités de Node.js et Express, ainsi que les différentes méthodes de gestion des données. Le projet a également permis de mettre en œuvre des opérations CRUD de manière sécurisée, utilisant MongoDB comme base de données.",
         "Les challenges du projet résident dans la sécurisation des données et de l'Api, cryptant les données avec Bcrypt, à l'aide des CORS, Helmet ou encore en limitant le nombre de requête à l'aide d'un limiteur; ainsi que dans l'optimisation des images que j'ai pu mettre en place avec Multer et Sharp."
       ],
-      "github": "https://github.com/HeleneC-cyber/OC_P6_MON-VIEUX-GRIMOIRE/tree/main/backend",
+      "github": "https://github.com/HeleneC-cyber/OC_P6_MON-VIEUX-GRIMOIRE",
       "live": null
     },
     {
@@ -278,7 +278,7 @@
         "Ce projet fut ma première expérience de planification de projet. Pour se faire, la méthodologie Agile Scrum a été mise en place avec ainsi que l'utilisation de Kanban afin d'avoir une meilleure vue d'ensemble du projet et une gestion plus efficace des tâches. Ce choix est en adéquation avec l'esprit collaboratif de la méthode agile et permet une plus grande adaptabilité.",
         "Egalement afin d'organiser efficacement le développement du site en répondant aux besoins spécifiques du client, j'ai consciencieusement choisi les technologies utilisées et rédigé les spécifications techniques."
       ],
-      "github": null,
+      "github": "https://github.com/HeleneC-cyber/OC_P7_Menu-Maker-By-QWENTA",
       "live": "https://freckle-marscapone-356.notion.site/196a5108f6b080f3bb2bd08b40c82b81?v=196a5108f6b080eb906a000ce6b38bac"
     }
   ]

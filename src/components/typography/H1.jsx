@@ -1,5 +1,8 @@
+// DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
+
+
 
 const H1 = ({title}) => {
   return (
@@ -12,9 +15,5 @@ const H1 = ({title}) => {
     </motion.h1>
   )
 }
-
-// H1.propTypes = {
-//   title: PropTypes.string.isRequiered
-// }
 
 export default H1

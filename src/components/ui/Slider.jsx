@@ -41,7 +41,6 @@ function SimpleSlider({ projectData, setActiveProjectId }) {
   }
 
 
-
   const settings = {
     infinite: true,
     slidesToShow: 3,
@@ -62,6 +61,7 @@ function SimpleSlider({ projectData, setActiveProjectId }) {
       })
     }
   }
+
   return (
     <motion.div 
     className="md:sticky md:top-[100px] font-p-bold  max-w-full w-[476px] h-[200px] text-sm md:text-md text-dark flex justify-center mx-auto mb-[100px] mt-[80px]"
@@ -70,6 +70,7 @@ function SimpleSlider({ projectData, setActiveProjectId }) {
     transition={{delay: 0.2, duration: 1}}
     >
       <Slider {...settings}>
+
         {projectData?.map((project) => {
           return <div key={project.id} className="bg-white h-[68px]">
           <div className="relative bg-sand h-[63px] flex items-center justify-center rounded-[10px]">
@@ -79,6 +80,7 @@ function SimpleSlider({ projectData, setActiveProjectId }) {
         </div>
         }
         )}
+        
       </Slider>
     </motion.div>
   )

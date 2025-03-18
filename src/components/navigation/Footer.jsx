@@ -1,13 +1,10 @@
-//DEPENDANCIES
+// DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
 import { createPortal } from 'react-dom'
-// import { useState } from 'react'
-
-//COMPONENTS
-import CreditsModal from './CreditsModal';
-//SVG
-import { useState } from "react";
+import { useState } from "react"
+// COMPONENTS
+import CreditsModal from '../ui/CreditsModal';
 
 
 

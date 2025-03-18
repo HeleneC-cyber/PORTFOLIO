@@ -1,15 +1,12 @@
 // DEPENDENCIES
 import { useState } from "react"
 // COMPONENTS
-import Header from "../components/Header"
-import H1 from "../components/H1"
-import SimpleSlider from "../components/Slider"
-import ProjectView from "../components/ProjectView"
+import Header from "../components/navigation/Header"
+import H1 from "../components/typography/H1"
+import SimpleSlider from "../components/ui/Slider"
+import ProjectView from "../components/ui/ProjectView"
 // DATA
 import data from "../data/projects.json"
-
-
-
 
 
 
@@ -24,7 +21,6 @@ const Projects = () => {
 
         <main className="full-container font-primary pt-[20px] md:main-container md:pt-[50px] md:flex md:items-stretch md:gap-[40px]">
 
-
           {/* DESKTOP LEFT SIDE : SLIDER */}
           <div className="mx-[20px] md:mx-[0px]">
             <H1 title="Mes projets" />
@@ -32,17 +28,14 @@ const Projects = () => {
               <SimpleSlider projectData={data.projects} setActiveProjectId={setId} />
           </div>
 
-
           {/* DESKTOP RIGHT SIDE : PROJECT VIEW */}
           <ProjectView projectData={data.projects[id]} />
 
-
         </main>
-
       </div>
     </>
-  );
-};
+  )
+}
 
 export default Projects
 

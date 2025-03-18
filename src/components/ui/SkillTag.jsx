@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 
 
+
 const SkillTag = ({ tags }) => {
 
   const getTagColor = (tag) => {

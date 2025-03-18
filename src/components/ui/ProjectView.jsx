@@ -1,21 +1,21 @@
 // DEPENDENCIES
-import { Link } from "react-router"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 // COMPONENTS
-import H2 from "./H2"
+import H2 from "../typography/H2"
 import SkillTag from "./SkillTag"
-import H3 from "./H3"
-import ProjectLink from "./ProjectLink"
+import H3 from "../typography/H3"
+import ProjectLink from "../utils/ProjectLink"
+import BtnScrollToTop from "../utils/BtnScrollToTop"
 // SVG
-import arrowBullet from "../assets/icons/arrow-bullet.svg"
-import BtnScrollToTop from "./BtnScrollToTop"
-// import githubSvg from "../assets/icons/github-light.svg"
+import arrowBullet from "../../assets/icons/arrow-bullet.svg"
+
 
 
 const ProjectView = ({ projectData }) => {
   return (
     <section className=" max-w-full rounded-t-[15px] overflow-hidden md:drop-shadow-[0_4px_30px_rgba(0,0,0,0.25)] text-dark mt-[40px] text-xs md:text-sm md:w-[830px]md:mt-[0px]">
+      {/* PROJECT CONTEXT */}
       <motion.div
         className="pt-[40px] px-[40px] pb-[40px] md:px-[80px] md:pb-[50px] bg-light "
         initial={{ opacity: 0 }}
@@ -37,7 +37,9 @@ const ProjectView = ({ projectData }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-      >
+        >
+
+        {/* OBJECTIVES */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -54,6 +56,8 @@ const ProjectView = ({ projectData }) => {
             })}
           </ul>
         </motion.div>
+
+        {/* PROJECT IMAGES */}
         <motion.div
           className="flex flex-col md:items-end width-full"
           initial={{ opacity: 0, x: 20 }}
@@ -68,6 +72,7 @@ const ProjectView = ({ projectData }) => {
           </div>
         </motion.div>
 
+        {/* PROJECT REMARKS */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -85,7 +90,6 @@ const ProjectView = ({ projectData }) => {
 
           <BtnScrollToTop customClass="block mx-auto mt-[80px] md:hidden" />
         </motion.div>
-
 
       </motion.div>
     </section>

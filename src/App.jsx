@@ -1,14 +1,14 @@
-//DEPENDENCIES
+// DEPENDENCIES
 import { BrowserRouter, Routes, Route } from "react-router"
-//PAGES
+// PAGES
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
-import Footer from './components/Footer.jsx'
+import Footer from './components/navigation/Footer.jsx'
 import Projects from "./pages/Projects.jsx"
 import Contact from "./pages/Contact.jsx"
 import PageNotFound from "./pages/PageNotFound.jsx"
-//COMPONENTS
-import RouteScrollToTop from "./components/RouteScrollToTop.jsx"
+// COMPONENTS
+import RouteScrollToTop from "./components/navigation/RouteScrollToTop.jsx"
 
 const App = () => {
   return (

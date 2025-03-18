@@ -1,15 +1,19 @@
+// DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react'
 import { Link } from 'react-router'
-
-import Header from '../components/Header'
-
+// COMPONENTS
+import Header from '../components/navigation/Header'
+// IMAGES
 import illustrationHome from '../assets/illustration-home-static.png'
 import plantL from '../assets/animated-plant-L.svg'
 import plantR1 from '../assets/animated-plant-R-red.svg'
 import plantR2 from '../assets/animated-plant-R-yellow.svg'
 
+
+
 const Home = () => {
+
   return (
     <div className="main-container">
       <div className="opacity-0">
@@ -28,6 +32,7 @@ const Home = () => {
           Bienvenue sur mon portfolio de frontend
         </motion.h1>
 
+        {/* MAIN ILLUSTRATION */}
         <div className="relative w-fit mt-[230px] mx-[30px]">
           <motion.img
             src={illustrationHome} alt="Femme devant un ordinateur avec un lapin et des plantes" className="w-[670px] max-w-[97%]"
@@ -79,8 +84,7 @@ const Home = () => {
               fill="#081645"
               d="M44.9,-61.3C58.9,-51.7,71.3,-39.4,76.7,-24.5C82.1,-9.7,80.3,7.9,75,24.4C69.7,40.9,60.8,56.2,47.7,64.9C34.6,73.6,17.3,75.6,1,74.3C-15.4,73,-30.8,68.3,-42.7,59.2C-54.7,50.2,-63.1,36.7,-69.4,21.5C-75.8,6.4,-80,-10.5,-76.9,-26.5C-73.8,-42.5,-63.4,-57.6,-49.3,-67.2C-35.3,-76.8,-17.6,-80.8,-1.1,-79.3C15.5,-77.9,30.9,-70.9,44.9,-61.3Z"
               transform="translate(100 100)"
-              animate={{
-                
+              animate={{ 
                 d: [
                   "M44.9,-61.3C58.9,-51.7,71.3,-39.4,76.7,-24.5C82.1,-9.7,80.3,7.9,75,24.4C69.7,40.9,60.8,56.2,47.7,64.9C34.6,73.6,17.3,75.6,1,74.3C-15.4,73,-30.8,68.3,-42.7,59.2C-54.7,50.2,-63.1,36.7,-69.4,21.5C-75.8,6.4,-80,-10.5,-76.9,-26.5C-73.8,-42.5,-63.4,-57.6,-49.3,-67.2C-35.3,-76.8,-17.6,-80.8,-1.1,-79.3C15.5,-77.9,30.9,-70.9,44.9,-61.3Z",
                   "M44.7,-62C59.1,-51,72.8,-39.6,78.2,-24.9C83.6,-10.3,80.7,7.5,72.5,20.7C64.3,33.9,50.7,42.5,37.7,50.6C24.7,58.8,12.4,66.5,1.1,65.1C-10.2,63.6,-20.4,52.9,-33.3,44.7C-46.2,36.5,-61.8,30.8,-67.6,20.2C-73.4,9.7,-69.4,-5.8,-66,-23.1C-62.6,-40.3,-59.8,-59.4,-48.9,-71.5C-38,-83.6,-19,-88.8,-1.9,-86.1C15.1,-83.4,30.2,-72.9,44.7,-62Z",
@@ -88,7 +92,6 @@ const Home = () => {
                 ],
               }}
               transition={{ repeat: Infinity, repeatType: "mirror", duration: 7, ease: "easeInOut" }}
-              
             />
           </motion.svg>
 

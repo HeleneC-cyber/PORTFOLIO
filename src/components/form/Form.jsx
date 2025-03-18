@@ -25,18 +25,12 @@ const Form = () => {
   // CONST FOR POP-UP
   const [openModal, setOpenModal] = useState(false)
   const handleClose = () => setOpenModal(false)
-  const [popupType, setPopupType] = useState("") //"success" or "failed"
+  const [popupType, setPopupType] = useState("") //"success" or "failed" 
 
-  //CONST FOR FORM VALIDATE
+  // CONST FOR FORM VALIDATE
   const [isErrorName, setIsErrorName] = useState(null)
   const [isErrorEmail, setIsErrorEmail] = useState(null)
   const [isErrorMessage, setIsErrorMessage] = useState(null)
-
-  // useEffect(() => {
-  //     console.log("isErrorName", isErrorName)
-  //     console.log("isErrorEmail", isErrorEmail)
-  //     console.log("isErrorMessage", isErrorMessage)
-  // }, [isErrorName, isErrorEmail, isErrorMessage])
 
 
   // SEND EMAIL
@@ -56,7 +50,6 @@ const Form = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!')
           setFormData({
             user_name: "",
             user_email: "",
@@ -66,7 +59,7 @@ const Form = () => {
           setPopupType("success");
         },
         (error) => {
-          console.log('FAILED...', error.text)
+          console.error(error)
           setOpenModal(true)
           setPopupType("failed");
         },

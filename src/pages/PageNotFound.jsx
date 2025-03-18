@@ -1,10 +1,9 @@
-import { Link } from "react-router"
+// DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
-
 // COMPONENTS
-import Header from "../components/Header.jsx"
-import Blob from "../components/Blob.jsx"
+import Header from "../components/navigation/Header.jsx"
+import Blob from "../components/ui/Blob.jsx"
 // IMAGE
 import womanHorizon from "../assets/woman-horizon.png"
 import blobBg from "../assets/blob-bg.svg"

@@ -4,12 +4,12 @@ import Wave from "react-wavify"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 // COMPONENTS
-import Header from "../components/Header"
-import H1 from "../components/H1"
-import H2 from "../components/H2"
-import SkillBlock from "../components/SkillBlock"
-import Collapse from "../components/Collapse"
-import BtnScrollToTop from "../components/BtnScrollToTop"
+import Header from "../components/navigation/Header"
+import H1 from "../components/typography/H1"
+import H2 from "../components/typography/H2"
+import SkillBlock from "../components/ui/SkillBlock"
+import Collapse from "../components/ui/Collapse"
+import BtnScrollToTop from "../components/utils/BtnScrollToTop"
 // DATA
 import data from "../data/collapses.json"
 import techData from "../data/techIcons.json"
@@ -35,6 +35,7 @@ const About = () => {
     <>
       <Header />
       <main className="mt-[50px] text-dark text-xs md:text-sm">
+        {/* PRESENTATION SECTION */}
         <section className="main-container mb-[50px] md:mb-[100px] ">
           <H1 title="A propos" />
           <div className="font-primary flex items-start gap-[35px] mt-[20px] md:mt-[50px]">
@@ -73,7 +74,7 @@ const About = () => {
                   >Moi c'est Hélène Canovas</motion.h3>
                 </div>
               </div>
-
+              
               <div className="mt-[20px]">
                 <motion.p
                   initial={{ opacity: 0, x: 20 }}
@@ -117,7 +118,8 @@ const About = () => {
                       whileTap={{ scale: 0.9 }}
                     /></Link>
                 </motion.div>
-
+                
+                {/* CV */}
                 <div className="flex justify-center">
                   <motion.a
                     href="" download="CV_Helene_Canovas_2025"
@@ -139,7 +141,7 @@ const About = () => {
           </div>
         </section>
 
-
+        {/* SKILLS SECTION */}
         <section className=" py-[70px] lg:py-[100px] bg-light mt-[100px] relative">
           <Wave
             fill="#FEF4EB"
@@ -197,7 +199,7 @@ const About = () => {
           </div>
         </section>
 
-
+        {/* CAREER SECTION */}
         <section className="main-container pt-[40px] md:pt-[50px] pb-[100px] md:pb-[150px] ">
           <H2 title="Mon parcours" customClass="ml-[10px]" />
           <div className="md:flex md:justify-around md:items-start md:gap-[20px] mt-[30px] md:mt-[50px] ">
@@ -241,25 +243,9 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 1 }}
             />
-            {/* <motion.button
-              onClick={scrollToTop}
-              aria-label="Bouton pour retourner en haut de la page"
-              className="cursor-pointer mr-[20px]"
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 1 }}
-            >
-              <motion.img
-                src={arrowTop} alt="flèche vers un bouton"
-                className="size-[50px]"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              />
-            </motion.button> */}
             <BtnScrollToTop customClass={"mr-[20px]"} />
-
           </div>
+
         </section>
       </main>
     </>

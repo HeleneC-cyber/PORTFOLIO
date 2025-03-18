@@ -1,8 +1,9 @@
 // DEPENDENCIES
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
-// ICON SVG
-import arrowTop from "../assets/icons/arrow-move-up.svg"
+// SVG
+import arrowTop from "../../assets/icons/arrow-move-up.svg"
+
 
 
 const BtnScrollToTop = ({ customClass }) => {
