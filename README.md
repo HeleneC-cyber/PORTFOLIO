@@ -50,7 +50,7 @@ Ce projet constitue à la fois un projet personnel et un projet professionnel, p
 ![Séparateur coloré](./public/images/readme/séparateur.png)
 
 ## 💻 Démonstration en ligne
-👉 Voir le site en ligne [ICI](https://helenecanovas.fr)
+👉 Voir le site en ligne [ICI](https://helenecanovas.fr)<br>
 👉 Voir la maquette Figma [ICI](https://www.figma.com/design/vImZhMZO6I7kNVAPzkKtbG/Portfolio?node-id=0-1&m=dev&t=55it6kj4r0KLcI9k-1)
 <br><br>
 
