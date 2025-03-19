@@ -1,5 +1,5 @@
 // DEPENDENCIES
-import { BrowserRouter, Routes, Route } from "react-router"
+import { Routes, Route, HashRouter } from "react-router"
 // PAGES
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
@@ -12,7 +12,7 @@ import RouteScrollToTop from "./components/navigation/RouteScrollToTop.jsx"
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <RouteScrollToTop />
       <Routes>
         <Route index element={<Home />} />
@@ -24,7 +24,7 @@ const App = () => {
       </Routes>
       <Footer />
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
