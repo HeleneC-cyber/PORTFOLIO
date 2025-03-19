@@ -58,6 +58,7 @@ Ce projet constitue à la fois un projet personnel et un projet professionnel, p
 - Ce projet offrant une plus grande liberté j'ai décidé d'utiliser les frameworks React et Tailwind CSS pour le développement du site. Cette solution me permet de concevoir un portfolio statique et dynamique rapidement et de manière optimisée et performante. Egalement pour le rendre plus attrayant, et l'animer facilement j'ai utilisé la librairie Framer Motion ainsi que les animations de React-Wavify.
 - Pour la conception des différentes pages du portfolio, j'ai utilisé Figma ainsi qu'Illustrator afin de personnaliser mes images vectorisées.
 - Ce projet ayant pour but d'entrer en contact avec de futurs employeurs et collègues, le formulaire de contact intégré est fonctionnel et facile à utiliser. Il nous permettra de communiquer si vous le souhaitez !"
+- A VENIR : Sélection des langues : Fr/En
 <br><br>
 
 ![Séparateur coloré](./public/images/readme/séparateur.png)

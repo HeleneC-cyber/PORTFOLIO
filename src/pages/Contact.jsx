@@ -79,13 +79,13 @@ const Contact = () => {
               </li>
             </motion.ul>
             <motion.div
-              className="relative mt-[180px] flex justify-center hidden md:block"
+              className="relative mt-[180px] md:flex md:justify-center hidden "
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 1 }}
             >
               <img src={womanLaptop} alt="Femme assise devant un ordinateur avecun thé" />
-              <Blob color="#357F76" position="absolute -bottom-[190px] -left-[50px] -z-1" />
+              <Blob color="#357F76" position="absolute -bottom-[190px] left-0 -z-1" />
             </motion.div>
           </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
         </div>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

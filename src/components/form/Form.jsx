@@ -70,7 +70,7 @@ const Form = () => {
     <>
       <form ref={form} method="post" onSubmit={sendEmail} className="flex flex-col gap-[45px] ">
         <Input
-          label="Nom"
+          label="Nom Prénom"
           id="name"
           type="text"
           name="user_name"
