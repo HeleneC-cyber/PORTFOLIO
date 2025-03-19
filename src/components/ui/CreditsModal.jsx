@@ -31,11 +31,11 @@ const CreditsModal = ({ isOpen, setIsOpen }) => {
             <p className="font-primary text-md mt-[30px]">Merci aux artistes dont les oeuvres, disponible sur iStock, ont enrichi ce projet :</p>
             <div className="flex items-end justify-between">
               <ul className="mt-[30px] flex-1">
-                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="/" target="_blank">Mary Long</a></li>
-                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="/" target="_blank">ma_rish</a></li>
-                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="/" target="_blank">SpicyTruffel</a></li>
-                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="/" target="_blank">Oksana Latysheva</a></li>
-                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="/" target="_blank">Vector</a></li>
+                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="https://www.istockphoto.com/fr/portfolio/ponomariova_maria?assettype=image&mediatype=illustration" target="_blank">Mary Long</a></li>
+                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="https://www.istockphoto.com/fr/portfolio/ma_rish?mediatype=illustration" target="_blank">ma_rish</a></li>
+                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="https://www.istockphoto.com/fr/portfolio/RomanEgorov?mediatype=illustration" target="_blank">SpicyTruffel</a></li>
+                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="https://www.istockphoto.com/fr/portfolio/OksanaLatysheva?mediatype=illustration" target="_blank">Oksana Latysheva</a></li>
+                <li className="text-blue text-md font-primary underline mb-[20px]"><a href="https://www.istockphoto.com/fr/portfolio/volkovaolena2682?mediatype=illustration" target="_blank">Vector</a></li>
               </ul>
 
               <img src={womanPencil} alt="Demoiselle tenant un crayon géant" className="w-[129px] mb-[23px]"

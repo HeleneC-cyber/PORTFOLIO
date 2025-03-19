@@ -64,7 +64,7 @@ function SimpleSlider({ projectData, setActiveProjectId }) {
 
   return (
     <motion.div 
-    className="md:sticky md:top-[100px] font-p-bold  max-w-full w-[476px] h-[200px] text-sm md:text-md text-dark flex justify-center mx-auto mb-[100px] mt-[80px]"
+    className="md:sticky md:top-[100px] font-p-bold  max-w-full w-[476px] h-[200px] text-sm md:text-md text-dark flex justify-center mx-auto mb-[100px] mt-[80px] z-5"
     initial={{y: 20, opacity: 0}} 
     animate={{y: 0, opacity: 1}} 
     transition={{delay: 0.2, duration: 1}}
@@ -74,7 +74,7 @@ function SimpleSlider({ projectData, setActiveProjectId }) {
         {projectData?.map((project) => {
           return <div key={project.id} className="bg-white h-[68px]">
           <div className="relative bg-sand h-[63px] flex items-center justify-center rounded-[10px]">
-            <p className="text-center">{project.title}</p>
+            <p className="text-center px-[25px]">{project.title}</p>
             <p className="absolute font-primary -rotate-90 right-[-10px] -translate-x-1/2">{project.year}</p>
           </div>
         </div>
@@ -87,90 +87,3 @@ function SimpleSlider({ projectData, setActiveProjectId }) {
 }
 
 export default SimpleSlider
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import Slider from "react-slick";
-// // import "slick-carousel/slick/slick.css";
-// // import "slick-carousel/slick/slick-theme.css";
-
-// import illustrationRabbit from "../assets/illustration-rabbit.png"
-
-
-
-// const BookSlider = () => {
-//   const settings = {
-//     dots: false,            // Affiche les petits points de navigation
-//     infinite: true,        // Permet un défilement infini
-//     speed: 500,            // Vitesse de transition en ms
-//     slidesToShow: 3,       // Nombre d'éléments visibles en même temps
-//     slidesToScroll: 1,     // Nombre d'éléments défilés à chaque transition
-//     autoplay: true,        // Active le défilement automatique
-//     autoplaySpeed: 3000,   // Temps entre chaque slide en ms
-//     arrows: true,          // Affiche les flèches de navigation
-//   };
-//   return (
-//     <Slider {...settings}>
-//       <div>
-//         <img src={illustrationRabbit} alt="Slide 1" />
-//       </div>
-//       <div>
-//         <img src="https://via.placeholder.com/300" alt="Slide 2" />
-//       </div>
-//       <div>
-//         <img src="https://via.placeholder.com/300" alt="Slide 3" />
-//       </div>
-//       <div>
-//         <img src="https://via.placeholder.com/300" alt="Slide 4" />
-//       </div>
-//     </Slider>
-//   );
-// };
-
-// export default BookSlider;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

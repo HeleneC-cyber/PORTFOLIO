@@ -122,7 +122,7 @@ const About = () => {
                 {/* CV */}
                 <div className="flex justify-center">
                   <motion.a
-                    href="" download="CV_Helene_Canovas_2025"
+                    href="/CV_Helene_Canovas.pdf" download="CV_Helene_Canovas_2025"
                     className="group flex items-center gap-[5px] w-fit "
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
