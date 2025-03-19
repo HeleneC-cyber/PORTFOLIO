@@ -47,22 +47,22 @@ const Contact = () => {
               transition={{ delay: 0.2, duration: 1 }}
             >
               <li>
-                <Link to="https://github.com/HeleneC-cyber" aria-label="" >
+                <a href="https://github.com/HeleneC-cyber" target="_blank" aria-label="" >
                   <motion.img
                     src={github} alt="logo Github"
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
                   />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="https://www.linkedin.com/in/helene-canovas-48710b141/" aria-label="Linkedin" >
+                <a href="https://www.linkedin.com/in/helene-canovas-48710b141/" target="_blank" aria-label="Linkedin" >
                   <motion.img
                     src={linkedin} alt="logo Linkedin"
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
                   />
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
